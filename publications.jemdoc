@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU.txt}{Publications.html}
+=Publications
+
+Authors with \* contributed equally to the work or are ordered alphabetically.
+
+
+== Preprints
+
+\[1\] [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
+Jose Blanchet\*, *Miao Lu\**, Tong Zhang\*, Han Zhong\* (alphabetical order).  \n 
+/ArXiv/ preprint, 2023. \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \n
+
+\[2\] [https://arxiv.org/abs/2305.18258 One Objective to Rule Them All: A Maximization Objective Fusing Estimation and Planning for Exploration]\n 
+Zhihan Liu\*, *Miao Lu\**, Wei Xiong\*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang.  \n 
+/ArXiv/ preprint, 2023. \[[ArXiv_MEX.pdf *PDF*]\] \n
+
+== 2023
+
+\[1\] [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
+*Miao Lu*, Yifei Min, Zhaoran Wang, Zhuoran Yang. \n
+Accepted to /International Conference on Learning Representations (ICLR) 2023/. \[[Pessimism_Confounded_POMDP.pdf *PDF*]\] \[[https://recorder-v3.slideslive.com/?share=79377&s=919b2157-24d6-4bf4-85fd-36f0743e2935 *Video*]\] \[[informs2022.pdf *Slides*]\]\n
+
+== 2022
+
+\[1\] [https://proceedings.mlr.press/v162/liu22l.html Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy]\n
+Zhihan Liu\*, *Miao Lu\**, Zhaoran Wang, Michael I. Jordan, Zhuoran Yang. \n
+Accepted to /International Conference on Machine Learning (ICML) 2022/. \[[ICML2022RLMEE.pdf *PDF*]\] \[[https://github.com/YSLIU627/RL-for-Markov-Exchange-Economy *Code*]\] \[[https://icml.cc/virtual/2022/spotlight/18356 *Video*]\] \[[ICML2022RLMEE_Slides.pdf *Slides*]\]\n
+
+\[2\] [https://openreview.net/forum?id=O1DEtITim__ Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, and No Retraining]\n
+*Miao Lu\**, Xiaolong Luo\*, Tianlong Chen, Wuyang Chen, Dong Liu, Zhangyang Wang. \n
+Accepted to /International Conference on Learning Representations (ICLR) 2022/ as *Spotlight*. \[[ICLR2022SFWPruning.pdf *PDF*]\] \[[https://github.com/VITA-Group/SFW-Once-for-All-Pruning *Code*]\] \[[https://iclr.cc/virtual/2022/spotlight/6159 *Video*]\] \[[ICLR2022SFWPruning_Slides.pdf *Slides*]\]\n
+
+\[3\] [https://arxiv.org/abs/2112.10513 Learning Robust Policy against Disturbance in Transition Dynamics via State-Conservative Policy Optimization]\n
+Yufei Kuang, *Miao Lu*, Jie Wang, Qi Zhou, Bin Li, Houqiang Li. \n
+Accepted to /Association for the Advancement of Artificial Intelligence (AAAI) 2022/. \[[AAAI2022SCPO.pdf *PDF*]\] \[[https://github.com/MIRALab-USTC/RL-SCPO *Code*]\] \[[AAAI2022SCPO_Slides.pdf *Slides*]\]\n
+\n

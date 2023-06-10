@@ -1,3 +1,4 @@
 Homepage
 	About Me				[index.html]
+	Publications			[publications.html]
 	Experiences				[experiences.html]

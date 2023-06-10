@@ -3,3 +3,44 @@
 {}{img_left}{fig_scmdp.png}{alt text}{300}{202.5}
 
 {}{img_left}{fig_sfw.png}{alt text}{300}{229.1}
+
+== Main Courses (USTC)
+Here is a list of the main courses that I took at University of Science and Technology of China, including courses in mathematics, computer science, and physics. * stands for a graduate-level course. (Attend) means I attend the course without getting credits.
+=== Analysis and Equations
+Mathematical Analysis B1,B2,B3 (96,83,94\/100)\n
+Real Analysis (100\/100)\n
+Complex Analysis (95\/100)\n
+Functional Analysis (100\/100)\n
+Differential Equations 1 (100\/100)\n
+\*Advanced Real Analysis (Attend)
+
+=== Probability and Statistics
+Elementary Probability Theory (95\/100)\n
+\*Advanced Probability Theory (98\/100)\n
+Applied Stochastic Process (97\/100)\n
+*Advanced Stochastic Process (97\/100)\n
+Mathematical Statistics (95\/100)\n
+Regression Analysis (90\/100)\n
+\*Martingale Theory and Stochastic Integration (98\/100)\n
+\*Nonparametric Statistics (89\/100)\n
+\*Bayesian Analysis (93\/100)
+
+=== Algebra and Geometry
+Linear Algebra B1,B2 (100,91\/100)\n
+Abstract Algebra (92\/100)\n
+Differential Geometry (88\/100)
+
+=== Computer and Information Science
+Software Design (Based on C) (96\/100)\n
+Data Structure and Data Base (96\/100)\n
+Introduction to Algorithms (Attended)\n
+\*Optimization Algorithms (99\/100)\n
+\*Information Theory (93\/100)\n
+\*Data Privacy (Attended)
+
+=== Physics
+Mechanics (100\/100)\n
+Electromagnetism (100\/100)\n
+Thermal Physics (92\/100)\n
+Optics and Atomic Physics (92\/100)
+
