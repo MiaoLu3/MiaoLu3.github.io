@@ -8,11 +8,8 @@
 *About Me*\n
 
 Welcome to my homepage!
-My name is Miao Lu.
-I obtained my Bachelor's degree in Probability and Statistics from the [https://www.ustc.edu.cn/ University of Science and Technology of China (USTC)] in 2022.
-I was fortunate to be enrolled in the [https://sgy.ustc.edu.cn/ School of the Gifted Young] at USTC, for which I skipped my third year of high school.
-In the year of 2022, I won the Guo Moruo scholarship, the highest honor awarding undergraduates in USTC.
-Starting from 2023 Fall, I am joining [https://msande.stanford.edu the Department of Management Science and Engineering] at [https://www.stanford.edu Stanford University] as a Ph.D. student.
+I am a Ph.D. student of [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], majoring in Operations Research.
+Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)], where I won the Guo Moruo scholarship, the highest honor awarding undergraduates in USTC.
 
 *Research Interests*\n
 
@@ -22,7 +19,7 @@ If you are interested in my background or want to chat or collaborate, feel free
 
 *Contact Information*\n
 
-E-mail addresses: lmdsghhh@gmail.com, miaolu@stanford.edu, miaolu3@hku.hk, lumiao@mail.ustc.edu.cn\n
+E-mail addresses: lmdsghhh@gmail.com, miaolu@stanford.edu, lumiao@mail.ustc.edu.cn\n
 Here are my [https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=3jS17zQAAAAJ&gmla=AJsN-F7b-8Yh03vfLpxWv7dg_zOwOUzsHmZtch3jtHn1AnlXfON8_0U4aCOR-BnSLCtfp3F0OjlUxIksNA70jCvUGbggl0Az9TQWt6_SLwYJNcOqCdQDnzA *Google Scholar*], [https://github.com/MiaoLu3 *GitHub*], [https://www.linkedin.com/in/miao-lu-5bb9a31aa *LinkedIn*].
 ~~~
 
@@ -30,13 +27,18 @@ Here are my [https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&us
 == Recent News
 
 ~~~
+
+(Sep. 2023) I am presenting our work [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage] at INFORMS 2023.
+
+(Sep. 2023) Two papers accepted to Neural Information Processing Systems (NeurIPS) 2023, with one Spotlight!
+
 (May. 2023) Two preprints released on ArXiv: [https://arxiv.org/abs/2305.09659 double pessimism for robust offline RL] and [https://arxiv.org/abs/2305.18258 sample-efficient \& implementation-friendly online RL], both with general function approximations.
 
 (Apr. 2023) In Spring 2023, I am joining on-site [https://www.cs.hku.hk the Department of Computer Science] at [https://www.hku.hk the University of Hong Kong] as a research assistant, working with Prof. [https://difanzou.github.io Difan Zou].
 
 (Jan. 2023) One paper accepted to International Conference on Learning Representation (ICLR) 2023.
 
-(Oct. 2022) Prof. Zhuoran Yang is presenting our work [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes] at INFORMS2022 and Stat.\&ML workshop at University of Michigan. Here is the [informs2022.pdf slide].
+(Oct. 2022) Prof. Zhuoran Yang is presenting our work [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes] at INFORMS 2022 and Stat.\&ML workshop at University of Michigan. Here is the [informs2022.pdf slide].
 ~~~
 
 
