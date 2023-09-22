@@ -3,10 +3,6 @@
 
 Authors with \* are ordered in an alphabetically, and \*\* represents equal contribution.
 
-== Preprints
-
-
-Ongoing
 
 
 
@@ -16,13 +12,13 @@ Ongoing
 
 \[[1]\] [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
 Jose Blanchet\*, *Miao Lu\**, Tong Zhang\*, Han Zhong\*. \n 
-/Neural Information Processing Systems (NeurIPS) 2023/ (short version). \n
+/Advances in Neural Information Processing Systems (NeurIPS) 2023/ (short version). \n
 /ArXiv/ preprint for long version, Aug, 2023. \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \n
 
 
 \[[2]\] [https://arxiv.org/abs/2305.18258 One Objective to Rule Them All: A Maximization Objective Fusing Estimation and Planning for Exploration]\n 
 Zhihan Liu\*\*, *Miao Lu\*\**, Wei Xiong\*\*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang.  \n 
-/Neural Information Processing Systems (NeurIPS) 2023/, *Spotlight*. \[[ArXiv_MEX.pdf *PDF*]\] \n
+/Advances in Neural Information Processing Systems (NeurIPS) 2023/, *Spotlight*. \[[ArXiv_MEX.pdf *PDF*]\] \n
 
 
 \[[3]\] [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
