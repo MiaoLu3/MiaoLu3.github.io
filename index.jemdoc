@@ -9,36 +9,30 @@
 
 Welcome to my homepage!
 I am a Ph.D. student of [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], majoring in Operations Research.
-Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)], where I won the Guo Moruo scholarship, the highest honor awarding undergraduates in USTC.
+Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)], where I won the Guo Moruo scholarship, the highest honor awarding undergraduates of USTC.
 
 *Research Interests*\n
 
 I have broad interests in the span of machine learning, statistics, and optimization.
-I enjoy using mathematical and computational tools to develop theoretical foundations and principled methods for real-world problems.
+My research focuses on applying mathematical and computational tools to develop theoretical foundations and principled methods for real-world problems.
 If you are interested in my background or want to chat or collaborate, feel free to contact me.
 
 *Contact Information*\n
 
-E-mail addresses: lmdsghhh@gmail.com, miaolu@stanford.edu, lumiao@mail.ustc.edu.cn\n
-Here are my [https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=3jS17zQAAAAJ&gmla=AJsN-F7b-8Yh03vfLpxWv7dg_zOwOUzsHmZtch3jtHn1AnlXfON8_0U4aCOR-BnSLCtfp3F0OjlUxIksNA70jCvUGbggl0Az9TQWt6_SLwYJNcOqCdQDnzA *Google Scholar*], [https://github.com/MiaoLu3 *GitHub*], [https://www.linkedin.com/in/miao-lu-5bb9a31aa *LinkedIn*].
+E-mail addresses: miaolu@stanford.edu, lumiao@mail.ustc.edu.cn, lmdsghhh@gmail.com\n
+
+Here are my [https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=3jS17zQAAAAJ&gmla=AJsN-F7b-8Yh03vfLpxWv7dg_zOwOUzsHmZtch3jtHn1AnlXfON8_0U4aCOR-BnSLCtfp3F0OjlUxIksNA70jCvUGbggl0Az9TQWt6_SLwYJNcOqCdQDnzA *Google Scholar*], [https://github.com/MiaoLu3 *GitHub*], [https://www.linkedin.com/in/miao-lu-5bb9a31aa *LinkedIn*]
 ~~~
 
 
 == Recent News
 
 ~~~
+(Oct. 2023) A new work released: ``[https://arxiv.org/abs/2310.17074 Benign Oscillation]'' for explaining generalization of *large* learning rate neural network training. 
 
-(Sep. 2023) I am presenting our work [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage] at INFORMS 2023.
+(Oct. 2023) I am presenting our work ``[https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]'' at INFORMS 2023. Here is the [NeurIPS2023DoublePessimism_Slides.pdf slides].
 
-(Sep. 2023) Two papers accepted to Neural Information Processing Systems (NeurIPS) 2023, with one Spotlight!
-
-(May. 2023) Two preprints released on ArXiv: [https://arxiv.org/abs/2305.09659 double pessimism for robust offline RL] and [https://arxiv.org/abs/2305.18258 sample-efficient \& implementation-friendly online RL], both with general function approximations.
-
-(Apr. 2023) In Spring 2023, I am joining on-site [https://www.cs.hku.hk the Department of Computer Science] at [https://www.hku.hk the University of Hong Kong] as a research assistant, working with Prof. [https://difanzou.github.io Difan Zou].
-
-(Jan. 2023) One paper accepted to International Conference on Learning Representation (ICLR) 2023.
-
-(Oct. 2022) Prof. Zhuoran Yang is presenting our work [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes] at INFORMS 2022 and Stat.\&ML workshop at University of Michigan. Here is the [informs2022.pdf slide].
+(Sep. 2023) Two papers ([https://arxiv.org/abs/2305.09659 Double Pessimism] and [https://arxiv.org/abs/2305.18258 Maximize to Explore (MEX)]) accepted to Neural Information Processing Systems (NeurIPS) 2023, with one [https://arxiv.org/abs/2305.18258 spotlight] presentation!
 ~~~
 
 
