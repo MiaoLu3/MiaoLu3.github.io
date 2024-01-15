@@ -10,39 +10,39 @@ Authors with \* contributed equally.
 
 \[[1]\] [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
 *Miao Lu\**, Beining Wu\*, Xiaodong Yang, Difan Zou \n 
-/NeurIPS Workshop on Mathematics of Modern Machine Learning/ (M3L) 2023\n
-/ArXiv/ preprint, Oct, 2023 \[[ArXiv_Benign_Oscillation.pdf *PDF*]\] \[[Benign_Oscillation_Poster.pdf *Poster*]\] 
+NeurIPS Workshop on Mathematics of Modern Machine Learning (*M3L*) 2023\n
+ArXiv preprint, Oct, 2023 \[[ArXiv_Benign_Oscillation.pdf *PDF*]\] \[[Benign_Oscillation_Poster.pdf *Poster*]\] 
 
 
 == 2023
 
-\[[1]\] [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
+\[[3]\] [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
 Jose Blanchet, *Miao Lu*, Tong Zhang, Han Zhong (alphabetical) \n 
-/Advances in Neural Information Processing Systems/ (NeurIPS) 2023 (short version)\n
-/ArXiv/ preprint (long version), Aug, 2023 \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \[[NeurIPS2023DoublePessimism_Slides.pdf *Slides*]\]\n
+Advances in Neural Information Processing Systems (*NeurIPS*) 2023 (short version)\n
+ArXiv preprint (long version), Aug, 2023 \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \[[NeurIPS2023DoublePessimism_Slides.pdf *Slides*]\]\n
 
 \[[2]\] [https://arxiv.org/abs/2305.18258 Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration]\n 
 Zhihan Liu\*, *Miao Lu\**, Wei Xiong\*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang \n 
-/Advances in Neural Information Processing Systems/ (NeurIPS) 2023, *Spotlight* \[[ArXiv_MEX.pdf *PDF*]\] \[[https://github.com/agentification/MEX *Code*]\] \[[NeurIPS2023MEX_Slides.pdf *Slides*]\]\n
+Advances in Neural Information Processing Systems (*NeurIPS*) 2023, *Spotlight* \[[ArXiv_MEX.pdf *PDF*]\] \[[https://github.com/agentification/MEX *Code*]\] \[[NeurIPS2023MEX_Slides.pdf *Slides*]\]\n
 
-\[[3]\] [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
+\[[1]\] [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
 *Miao Lu*, Yifei Min, Zhaoran Wang, Zhuoran Yang \n
-/International Conference on Learning Representations/ (ICLR) 2023  \[[Pessimism_Confounded_POMDP.pdf *PDF*]\] \[[informs2022.pdf *Slides*]\]
+International Conference on Learning Representations (*ICLR*) 2023  \[[Pessimism_Confounded_POMDP.pdf *PDF*]\] \[[informs2022.pdf *Slides*]\]
 
 
 == 2022
 
 
-\[[1]\] [https://proceedings.mlr.press/v162/liu22l.html Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy]\n
+\[[3]\] [https://proceedings.mlr.press/v162/liu22l.html Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy]\n
 Zhihan Liu\*, *Miao Lu\**, Zhaoran Wang, Michael I. Jordan, Zhuoran Yang \n
-/International Conference on Machine Learning/ (ICML) 2022 \[[ICML2022RLMEE.pdf *PDF*]\] \[[https://github.com/YSLIU627/RL-for-Markov-Exchange-Economy *Code*]\] \[[ICML2022RLMEE_Slides.pdf *Slides*]\]\n
+International Conference on Machine Learning (*ICML*) 2022 \[[ICML2022RLMEE.pdf *PDF*]\] \[[https://github.com/YSLIU627/RL-for-Markov-Exchange-Economy *Code*]\] \[[ICML2022RLMEE_Slides.pdf *Slides*]\]\n
 
 
 \[[2]\] [https://openreview.net/forum?id=O1DEtITim__ Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, and No Retraining]\n
 *Miao Lu\**, Xiaolong Luo\*, Tianlong Chen, Wuyang Chen, Dong Liu, Zhangyang Wang \n
-/International Conference on Learning Representations/ (ICLR) 2022, *Spotlight* \[[ICLR2022SFWPruning.pdf *PDF*]\] \[[https://github.com/VITA-Group/SFW-Once-for-All-Pruning *Code*]\]  \[[ICLR2022SFWPruning_Slides.pdf *Slides*]\]\n 
+International Conference on Learning Representations (*ICLR*) 2022, *Spotlight* \[[ICLR2022SFWPruning.pdf *PDF*]\] \[[https://github.com/VITA-Group/SFW-Once-for-All-Pruning *Code*]\]  \[[ICLR2022SFWPruning_Slides.pdf *Slides*]\]\n 
 
 
-\[[3]\] [https://arxiv.org/abs/2112.10513 Learning Robust Policy against Disturbance in Transition Dynamics via State-Conservative Policy Optimization]\n
+\[[1]\] [https://arxiv.org/abs/2112.10513 Learning Robust Policy against Disturbance in Transition Dynamics via State-Conservative Policy Optimization]\n
 Yufei Kuang, *Miao Lu*, Jie Wang, Qi Zhou, Bin Li, Houqiang Li \n
-/Association for the Advancement of Artificial Intelligence/ (AAAI) 2022 \[[AAAI2022SCPO.pdf *PDF*]\] \[[https://github.com/MIRALab-USTC/RL-SCPO *Code*]\] \[[AAAI2022SCPO_Slides.pdf *Slides*]\]\n
+Association for the Advancement of Artificial Intelligence (*AAAI*) 2022 \[[AAAI2022SCPO.pdf *PDF*]\] \[[https://github.com/MIRALab-USTC/RL-SCPO *Code*]\] \[[AAAI2022SCPO_Slides.pdf *Slides*]\]\n
