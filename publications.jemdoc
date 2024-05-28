@@ -6,6 +6,9 @@ Authors with \* contributed equally.
 
 == 2024
 
+. [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
+Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
+ArXiv preprint, May, 2024 \[[ArXiv_RPO.pdf *PDF*]\]
 . [https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]\n 
 *Miao Lu\**, Han Zhong\*, Tong Zhang, Jose Blanchet \n 
 ArXiv preprint, Apr, 2024 \[[ArXiv_DRRL_Interactive.pdf *PDF*]\]
@@ -26,6 +29,7 @@ ArXiv preprint (long version), Aug, 2023 \[[ArXiv_Double_Pessimism.pdf *PDF*]\] 
 . [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
 *Miao Lu*, Yifei Min, Zhaoran Wang, Zhuoran Yang \n
 International Conference on Learning Representations (ICLR) 2023  \[[ArXiv_Pessimism_Confounded_POMDP.pdf *PDF*]\] \[[informs2022.pdf *Slides*]\]
+
 
 == 2022 
 

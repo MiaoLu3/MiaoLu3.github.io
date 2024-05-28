@@ -2,7 +2,7 @@
 =Miao Lu
 
 ~~~
-{}{img_left}{profile.jpg}{alt text}{256}{298}
+{}{img_left}{profile.jpg}{alt text}{257.71}{300}
 
 
 *About Me*\n
@@ -28,6 +28,8 @@ Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&
 == Recent News
 
 ~~~
+(May. 2024) Our new paper released: ``[https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]''. We designed a new RLHF algorithm that we provably mitigates /overoptimization/ with suprisingly easy implementation (SFT loss as regularizer).
+
 (Apr. 2024) Check out our new paper ``[https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]''! We uncover the fundamental hardness of distributionally robust RL through interactive data collection in general, accompanied by a near-optimal algorithm for a solvable case.
 
 (Mar. 2024) I am presenting our work ``[https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]'' at [https://ee-ciss.princeton.edu CISS 2024], see you at Princeton!
