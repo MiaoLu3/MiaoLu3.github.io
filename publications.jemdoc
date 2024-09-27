@@ -7,12 +7,12 @@ Authors with \* contributed equally.
 == 2024
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
-ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024 \n
+/ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024/ \n
 /Neural Information Processing Systems (NeurIPS) 2024/ \[[ArXiv_RPO.pdf *PDF*]\]
 
 - [https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]\n 
 *Miao Lu\**, Han Zhong\*, Tong Zhang, Jose Blanchet \n 
-ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024 \n
+/ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024/ \n
 /Neural Information Processing Systems (NeurIPS) 2024/ \[[ArXiv_DRRL_Interactive.pdf *PDF*]\]
 
 - [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
