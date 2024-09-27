@@ -36,6 +36,10 @@
 
 == Invited Talks 
 
+*Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm* 
+
+- (Oct. 2024) INFORMS Annual Meeting, Seattle, WA, USA, 2024
+
 *Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage*
 
 - (Mar. 2024) 58th Annual Conference on Information Sciences and Systems, Princeton, NJ, USA, 2024
@@ -60,10 +64,14 @@
 
 === Journal reviewer 
 
+Operations Research (OR) \n
 Annals of Applied Probability (AOAP)
 
 
 === Conference reviewer
 Neural Information Processing Systems (NeurIPS; 2023, 2024) \n
-International Conference on Learning Representations (ICLR; 2024)\n
-International Conference on Machine Learning (ICML; 2024)
+International Conference on Learning Representations (ICLR; 2024, 2025)\n
+International Conference on Machine Learning (ICML; 2024)\n 
+ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET; 2024) \n
+NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L; 2024)\n
+Association for the Advancement of Artificial Intelligence (AAAI; 2025)

@@ -28,18 +28,31 @@ Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&
 == Recent News
 
 ~~~
+(Oct. 2024) I am presenting our work ``[https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]'' at INFORMS 2024. See you at Seattle!
+
+(Sep. 2024) Our two papers ([https://arxiv.org/abs/2404.03578 distributionally robust RL with interactive data collection] and [https://arxiv.org/abs/2405.16436 provably mitigating overoptimization in RLHF]) are accepted to Neural Information Processing Systems (NeurIPS) 2024.
+
 (May. 2024) Our new paper released: ``[https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]''. We designed a new RLHF algorithm that we provably mitigates /overoptimization/ with suprisingly easy implementation (SFT loss as regularizer).
 
 (Apr. 2024) Check out our new paper ``[https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]''! We uncover the fundamental hardness of distributionally robust RL through interactive data collection in general, accompanied by a near-optimal algorithm for a solvable case.
 
 (Mar. 2024) I am presenting our work ``[https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]'' at [https://ee-ciss.princeton.edu CISS 2024], see you at Princeton!
 
-(Jan. 2024) Our paper ([https://arxiv.org/abs/2310.17074 Benign Oscillation]) accepted to International Conference on Learning Representations (ICLR) 2024!
-
-(Oct. 2023) A new work released: ``[https://arxiv.org/abs/2310.17074 Benign Oscillation]'' for explaining generalization of *large* learning rate neural network training. 
+(Jan. 2024) Our paper ([https://arxiv.org/abs/2310.17074 Benign Oscillation]) accepted to International Conference on Learning Representations (ICLR) 2024.
 ~~~
 
+== Selected Publications  
 
+- [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
+with Beining Wu, Xiaodong Yang, Difan Zou \n 
+/International Conference on Learning Representations (ICLR) 2024/ \n
 
+- [https://arxiv.org/abs/2305.18258 Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration]\n 
+with Zhihan Liu, Wei Xiong, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang \n 
+/Neural Information Processing Systems (NeurIPS) 2023/ \n
+
+- [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
+with Jose Blanchet, Tong Zhang, Han Zhong \n 
+/Neural Information Processing Systems (NeurIPS) 2023/ \n
 
 
