@@ -5,6 +5,7 @@ Authors with \* contributed equally.
 
 
 == 2024
+
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
 /ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024/ \n
@@ -20,7 +21,7 @@ Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, J
 /NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L) 2023/ \n
 /International Conference on Learning Representations (ICLR) 2024/ \[[ArXiv_Benign_Oscillation.pdf *PDF*]\] \[[Benign_Oscillation_Poster.pdf *Poster*]\] 
 
-== 2023 
+== Before 2024
 
 - [https://arxiv.org/abs/2305.18258 Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration]\n 
 Zhihan Liu\*, *Miao Lu\**, Wei Xiong\*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang \n 
@@ -34,9 +35,6 @@ Jose Blanchet, *Miao Lu*, Tong Zhang, Han Zhong (alphabetical) \n
 - [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
 *Miao Lu*, Yifei Min, Zhaoran Wang, Zhuoran Yang \n
 /International Conference on Learning Representations (ICLR) 2023/  \[[ArXiv_Pessimism_Confounded_POMDP.pdf *PDF*]\] \[[informs2022.pdf *Slides*]\]
-
-
-== 2022 
 
 - [https://proceedings.mlr.press/v162/liu22l.html Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy]\n
 Zhihan Liu\*, *Miao Lu\**, Zhaoran Wang, Michael I. Jordan, Zhuoran Yang \n

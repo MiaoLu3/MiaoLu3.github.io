@@ -35,6 +35,10 @@ Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&
 
 == Selected Publications  
 
+- [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
+with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
+/Neural Information Processing Systems (NeurIPS) 2024/ \n
+
 - [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
 with Beining Wu, Xiaodong Yang, Difan Zou \n 
 /International Conference on Learning Representations (ICLR) 2024/ \n
