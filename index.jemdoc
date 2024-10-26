@@ -2,8 +2,7 @@
 =Miao Lu
 
 ~~~
-{}{img_left}{profile.jpg}{alt text}{257.71}{300}
-
+{}{img_left}{profile_seattle.png}{alt text}{325}{325}
 
 *About Me*\n
 
@@ -37,7 +36,7 @@ Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&
 
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
-/Neural Information Processing Systems (NeurIPS) 2024/ \n
+/Neural Information Processing Systems (NeurIPS) 2024/ 
 
 - [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
 with Beining Wu, Xiaodong Yang, Difan Zou \n 
@@ -49,6 +48,6 @@ with Zhihan Liu, Wei Xiong, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuora
 
 - [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
 with Jose Blanchet, Tong Zhang, Han Zhong \n 
-/Neural Information Processing Systems (NeurIPS) 2023/ \n
+/Neural Information Processing Systems (NeurIPS) 2023/ 
 
 
