@@ -18,17 +18,13 @@
 == Experiences 
 
 *Stanford University*, Stanford, USA. /Jan.2024-present/
-- Research assistant at the Deparment of Management Science \& Engineering, advised by Prof. Jose H. Blanchet
-
+- Research assistant at the Deparment of Management Science \& Engineering, advised by [https://scholar.google.com/citations?user=O24CcQQAAAAJ&hl=en Jose Blanchet]
 
 *University of Hong Kong*, Hong Kong SAR, China. /Apr.2023-Aug.2023/
-- Research assistant at the Deparment of Computer Science and the Institute of Data Science, hosted by Prof. Difan Zou
-- Working on the interaction of optimization and generalization in deep learning theory
-
+- Research assistant at the Deparment of Computer Science and the Institute of Data Science, hosted by [https://difanzou.github.io Difan Zou]
 
 *Ubiquant Investment*, Shanghai, China. /Jun.2022-Sep.2022/
 - Quantitative research intern at the AI Department of Ubiquant
-- Applying deep learning techniques in quantitative trading tasks
 
 == Teaching Experiences 
 
@@ -36,11 +32,15 @@
 
 == Invited Talks 
 
-*Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm* 
+*Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model* 
+
+- (Dec. 2024) 2nd NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L), Vancouver, BC, Canada, 2024
+
+*Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm* \[[NeurIPS2024IDCSlides.pdf *Slides*]\]
 
 - (Oct. 2024) INFORMS Annual Meeting, Seattle, WA, USA, 2024
 
-*Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage*
+*Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage* \[[NeurIPS2023DoublePessimism_Slides.pdf *Slides*]\]
 
 - (Mar. 2024) 58th Annual Conference on Information Sciences and Systems, Princeton, NJ, USA, 2024
 - (Oct. 2023) INFORMS Annual Meeting, Phoenix, AZ, USA, 2023
