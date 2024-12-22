@@ -10,18 +10,12 @@
 
 *University of Science and Technology of China*, Hefei, China. /Sep.2018-Jun.2022/
 - B.S. in Mathematics and Applied Mathematics (Probability and Statistics track, Overall GPA: 4.06/4.30, Ranking: 2nd)
-- School of the Gifted Young (skip the 3rd year of high school)
-- Guo Moruo Scholarship (highest scholarship from USTC)
+- School of the Gifted Young
+- Guo Moruo Scholarship
 
 
 
-== Experiences 
-
-*Stanford University*, Stanford, USA. /Jan.2024-present/
-- Research assistant at the Deparment of Management Science \& Engineering, advised by [https://scholar.google.com/citations?user=O24CcQQAAAAJ&hl=en Jose Blanchet]
-
-*University of Hong Kong*, Hong Kong SAR, China. /Apr.2023-Aug.2023/
-- Research assistant at the Deparment of Computer Science and the Institute of Data Science, hosted by [https://difanzou.github.io Difan Zou]
+== Industrial Experiences 
 
 *Ubiquant Investment*, Shanghai, China. /Jun.2022-Sep.2022/
 - Quantitative research intern at the AI Department of Ubiquant
@@ -32,7 +26,7 @@
 
 == Invited Talks 
 
-*Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model* 
+*Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model* \[[M3L_slides.pdf *Slides*]\]
 
 - (Dec. 2024) 2nd NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L), Vancouver, BC, Canada, 2024
 
@@ -65,14 +59,16 @@
 === Journal reviewer 
 
 Operations Research (OR) \n
+Mathematics of Operations Research (MOR) \n
 Annals of Applied Probability (AOAP)
+
 
 
 === Conference reviewer
 Neural Information Processing Systems (NeurIPS; 2023, 2024) \n
 International Conference on Learning Representations (ICLR; 2024, 2025)\n
-International Conference on Machine Learning (ICML; 2024)\n 
- International Conference on Artificial Intelligence and Statistics (AISTATS; 2025)\n
+International Conference on Machine Learning (ICML; 2024, 2025)\n 
+International Conference on Artificial Intelligence and Statistics (AISTATS; 2025)\n
 ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET; 2024) \n
 NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L; 2024)\n
 Association for the Advancement of Artificial Intelligence (AAAI; 2025)

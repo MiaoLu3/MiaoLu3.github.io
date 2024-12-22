@@ -25,7 +25,9 @@ Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&
 
 == Recent News
 
-~~~
+~~
+(Dec. 2024) I am presenting our work ``[https://openreview.net/forum?id=8V78zZDgFj Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model]'' at NeurIPS 2024 M3L Workshop. See you at Vancouver!
+
 (Oct. 2024) I am presenting our work ``[https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]'' at INFORMS 2024. See you at Seattle!
 
 (Sep. 2024) Our two papers ([https://arxiv.org/abs/2404.03578 distributionally robust RL with interactive data collection] and [https://arxiv.org/abs/2405.16436 provably mitigating overoptimization in RLHF]) are accepted to Neural Information Processing Systems (NeurIPS) 2024.
