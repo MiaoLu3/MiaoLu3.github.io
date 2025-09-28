@@ -7,37 +7,40 @@
 *About Me*\n
 
 Welcome to my homepage!
-I am a Ph.D. student of [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], majoring in Operations Research.
+
+I am a Ph.D. candidate in Operations Research from [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University].
 Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)], where I won the Guo Moruo scholarship, the highest honor awarding undergraduates of USTC.
 
 *Research Interests*\n
 
-My ultimate goal of research is to (i) develop the theoretical foundations of the next generation artificial intelligence (AI) techniques
-and (ii) make the best use of AI to effectively address challenging managerial and societal problems. 
+My current research interest centers around reinforcement learning for LLM agents and training.
+
+With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of provably sample-efficient reinforcement learning, reinforcement learning from human feedback for LLM, training dynamics and generalization of optimization in deep learning landscapes, and reinforcement learning for operations and economics.
 
 *Contact Information*\n
 
 E-mail addresses: miaolu@stanford.edu, lumiao@mail.ustc.edu.cn\n
 
-Here are my \[[https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=3jS17zQAAAAJ&gmla=AJsN-F7b-8Yh03vfLpxWv7dg_zOwOUzsHmZtch3jtHn1AnlXfON8_0U4aCOR-BnSLCtfp3F0OjlUxIksNA70jCvUGbggl0Az9TQWt6_SLwYJNcOqCdQDnzA *Google Scholar*]\] \[[https://github.com/MiaoLu3 *GitHub*]\] \[[https://www.linkedin.com/in/miao-lu-5bb9a31aa *LinkedIn*]\] \[[Curriculum_Vitae.pdf *CV*]\]
+Here are my \[[https://scholar.google.com/citations?hl=en&user=3jS17zQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar]\] \[[https://github.com/MiaoLu3 GitHub]\] \[[https://www.linkedin.com/in/miao-lu-5bb9a31aa LinkedIn]\] \[[Curriculum_Vitae.pdf CV]\]
 ~~~
 
+== Industrial Experiences 
 
-== Recent News
+*ByteDance Seed*, San Jose, USA. /Jun. 2025 - Sep.2025/ 
+- Researcher Scientist Intern in Foundations Models
 
-~~
-(Dec. 2024) I am presenting our work ``[https://openreview.net/forum?id=8V78zZDgFj Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model]'' at NeurIPS 2024 M3L Workshop. See you at Vancouver!
-
-(Oct. 2024) I am presenting our work ``[https://arxiv.org/abs/2404.03578 Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm]'' at INFORMS 2024. See you at Seattle!
-
-(Sep. 2024) Our two papers ([https://arxiv.org/abs/2404.03578 distributionally robust RL with interactive data collection] and [https://arxiv.org/abs/2405.16436 provably mitigating overoptimization in RLHF]) are accepted to Neural Information Processing Systems (NeurIPS) 2024.
-~~~
+*Ubiquant Investment*, Shanghai, China. /Jun. 2022 - Sep. 2022/
+- Quantitative Research Intern in the AI Department
 
 == Selected Publications  
 
+- [https://miaolu3.github.io Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
+with Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
+/Submitted, Sep, 2025/ \n
+
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
-/Neural Information Processing Systems (NeurIPS) 2024/ 
+/Neural Information Processing Systems (NeurIPS) 2024/ \n
 
 - [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
 with Beining Wu, Xiaodong Yang, Difan Zou \n 
@@ -49,6 +52,6 @@ with Zhihan Liu, Wei Xiong, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuora
 
 - [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
 with Jose Blanchet, Tong Zhang, Han Zhong \n 
-/Neural Information Processing Systems (NeurIPS) 2023/ 
+/Neural Information Processing Systems (NeurIPS) 2023/ \n
 
 

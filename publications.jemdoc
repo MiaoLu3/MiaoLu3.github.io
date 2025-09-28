@@ -4,18 +4,32 @@
 Authors with \* contributed equally.
 
 
-== 2025 
+== 2025
 
+
+- [https://miaolu3.github.io/publications.html Scaling Long-Horizon Agent via Context Folding] \n 
+Weiwei Sun, *Miao Lu*, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
+/Submitted/, Sep, 2025 \n
+
+- [https://miaolu3.github.io/publications.html Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
+*Miao Lu*, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
+/Submitted/, Sep, 2025 \n
+
+- [https://arxiv.org/pdf/2508.07571 Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression]\n
+Xingwu Chen, *Miao Lu*, Beining Wu, Difan Zou \n
+/NeurIPS Workshop on Foundations of Reasoning in Language Models (FoRLM) 2025/  \n 
+/arXiv preprint/, Aug, 2025 \[[ArXiv_TTC.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2502.06777  Learning an Optimal Assortment Policy under Observational Data]\n
 Yuxuan Han, Han Zhong, *Miao Lu*, Jose Blanchet, Zhengyuan Zhou \n
-/arXiv preprint/, Feb, 2025 \[[ArXiv_PRB.pdf *PDF*]\] \n
-
+/Under review in Management Science (MS)/ \n
+/arXiv preprint/, Feb, 2025 \[[ArXiv_PRB.pdf *PDF*]\]  \n
 
 - [https://openreview.net/forum?id=is4nCVkSFA Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model]\n
 Siyu Chen\*, Beining Wu\*, *Miao Lu*, Zhuoran Yang, Tianhao Wang \n
 /NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L) 2024/ *Oral*  \n 
 /International Conference on Learning Representations (ICLR) 2025/ *Oral* \[[ICLR2025SingleIndex.pdf *PDF*]\] \[[M3L_slides.pdf *Slides*]\] \n
+
 
 
 == Before 2025
@@ -37,12 +51,13 @@ Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, J
 
 - [https://arxiv.org/abs/2305.18258 Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration]\n 
 Zhihan Liu\*, *Miao Lu\**, Wei Xiong\*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang \n 
-/Neural Information Processing Systems (NeurIPS) 2023/ *Spotlight*  \[[ArXiv_MEX.pdf *PDF*]\] \[[https://github.com/agentification/MEX *Code*]\] \[[NeurIPS2023MEX_Slides.pdf *Slides*]\]\n
+/Neural Information Processing Systems (NeurIPS) 2023/ *Spotlight*  (short version)  \n
+/Under review in Operations Research (OR)  / (long version) \[[ArXiv_MEX.pdf *PDF*]\] \[[https://github.com/agentification/MEX *Code*]\] \[[NeurIPS2023MEX_Slides.pdf *Slides*]\]\n
 
 - [https://arxiv.org/abs/2305.09659 Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage]\n 
 Jose Blanchet, *Miao Lu*, Tong Zhang, Han Zhong (alphabetical) \n 
 /Neural Information Processing Systems (NeurIPS) 2023/ (short version)\n
-/arXiv preprint/, Aug, 2023 (long version) \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \[[NeurIPS2023DoublePessimism_Slides.pdf *Slides*]\]\n
+/Major revision in Mathematics of Operations Research (MOR)  / (long version)  \[[ArXiv_Double_Pessimism.pdf *PDF*]\] \[[NeurIPS2023DoublePessimism_Slides.pdf *Slides*]\]\n
 
 - [https://arxiv.org/abs/2205.13589 Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes]\n
 *Miao Lu*, Yifei Min, Zhaoran Wang, Zhuoran Yang \n
