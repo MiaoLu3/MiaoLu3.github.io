@@ -8,26 +8,26 @@
 
 Welcome to my homepage!
 
-I am a Ph.D. candidate in Operations Research from [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University].
-Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)], where I won the Guo Moruo scholarship, the highest honor awarding undergraduates of USTC.
+I am a third-year Ph.D. candidate in Operations Research from [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], advised by [https://joseblanchet.com Prof. Jose Blanchet].
+Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)].
 
 *Research Interests*\n
 
-My current research interest centers around reinforcement learning for LLM agents and training.
+My research centers around reinforcement learning (RL). Recently, I am excited by the power of RL in advancing LLM agents.
 
-With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of provably sample-efficient reinforcement learning, reinforcement learning from human feedback for LLM, training dynamics and generalization of optimization in deep learning landscapes, and reinforcement learning for operations and economics.
+With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of provably sample-efficient RL, training dynamics and generalization properties in deep learning loss landscapes, and RL for operations and economics.
 
 *Contact Information*\n
 
-E-mail addresses: miaolu@stanford.edu, lumiao@mail.ustc.edu.cn\n
+Email: miaolu [at] stanford [dot] edu
 
-Here are my \[[https://scholar.google.com/citations?hl=en&user=3jS17zQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar]\] \[[https://github.com/MiaoLu3 GitHub]\] \[[https://www.linkedin.com/in/miao-lu-5bb9a31aa LinkedIn]\] \[[Curriculum_Vitae.pdf CV]\]
+\[[https://scholar.google.com/citations?hl=en&user=3jS17zQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar]\] \[[https://github.com/MiaoLu3 GitHub]\] \[[https://www.linkedin.com/in/miao-lu-5bb9a31aa LinkedIn]\] \[[Curriculum_Vitae.pdf CV]\]
 ~~~
 
 == Industrial Experiences 
 
 *ByteDance Seed*, San Jose, USA. /Jun. 2025 - Sep.2025/ 
-- Researcher Scientist Intern in Foundations Models
+- Research Scientist Intern in Foundations Models
 
 *Ubiquant Investment*, Shanghai, China. /Jun. 2022 - Sep. 2022/
 - Quantitative Research Intern in the AI Department
