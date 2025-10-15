@@ -6,13 +6,14 @@ Authors with \* contributed equally.
 
 == 2025
 
-- [https://miaolu3.github.io/publications.html Scaling Long-Horizon LLM Agent via Context Folding] \n 
+- [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
 Weiwei Sun, *Miao Lu*, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
-/Under conference review/, 2025 \n
+/Under conference review/ \n
+/arXiv preprint/, Oct, 2025  \[[ArXiv_FoldGRPO.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2510.06727 Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
 *Miao Lu*, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
-/Under conference review/, 2025 \n
+/Under conference review/ \n
 /arXiv preprint/, Oct, 2025  \[[ArXiv_SUPO.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2508.07571 Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression]\n
