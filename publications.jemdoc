@@ -3,8 +3,14 @@
 
 Authors with \* contributed equally.
 
+== 2026
 
-== 2025
+
+- [https://arxiv.org/abs/2602.10696 Robus Assortment Optimization from Observational Data]\n
+*Miao Lu*, Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet \n
+/arXiv preprint/, Feb, 2026 \[[ArXiv_PR2B.pdf *PDF*]\] \n
+
+== Before 2026
 
 - [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
 Weiwei Sun, *Miao Lu*, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
@@ -17,7 +23,7 @@ Weiwei Sun, *Miao Lu*, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Che
 /arXiv preprint/, Oct, 2025  \[[ArXiv_SUPO.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2508.07571 Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression]\n
-Xingwu Chen, *Miao Lu*, Beining Wu, Difan Zou \n
+Xingwu Chen\*, *Miao Lu\**, Beining Wu, Difan Zou \n
 /NeurIPS Workshop on Foundations of Reasoning in Language Models (FoRLM) 2025/  \n 
 /arXiv preprint/, Aug, 2025 \[[ArXiv_TTC.pdf *PDF*]\] \n
 
@@ -31,9 +37,6 @@ Siyu Chen\*, Beining Wu\*, *Miao Lu*, Zhuoran Yang, Tianhao Wang \n
 /NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L) 2024/ *Oral*  \n 
 /International Conference on Learning Representations (ICLR) 2025/ *Oral* \[[ICLR2025SingleIndex.pdf *PDF*]\] \[[M3L_slides.pdf *Slides*]\] \n
 
-
-
-== Before 2025
 
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 Zhihan Liu\*, *Miao Lu\**, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 

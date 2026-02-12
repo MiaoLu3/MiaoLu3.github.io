@@ -8,14 +8,15 @@
 
 Welcome to my homepage!
 
-I am a third-year Ph.D. candidate in Operations Research from [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], advised by [https://joseblanchet.com Prof. Jose Blanchet].
-Prior to that, I obtained my Bachelor's degree in Probability and Statistics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)].
+I am a third-year Ph.D. candidate from [https://msande.stanford.edu the Department of Management Science and Engineering (MS&E)] at [https://www.stanford.edu Stanford University], advised by [https://joseblanchet.com Prof. Jose Blanchet].
+I obtained my Bachelor's degree in Mathematics from the [http://en.ustc.edu.cn University of Science and Technology of China (USTC)].
+Currently I am also a research scientist intern at NVIDIA Research. I previously interned at ByteDance Seed and Ubiquant Investment.
 
 *Research Interests*\n
 
-My research centers around reinforcement learning (RL). Recently, I am excited by the power of RL in advancing LLM agents.
+My recent research centers around reinforcement learning (RL) and LLM post-training.
 
-With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of provably sample-efficient RL, training dynamics and generalization properties in deep learning loss landscapes, and RL for operations and economics.
+With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of RL, training dynamics and generalization properties of deep learning, and RL for operations and economics.
 
 *Contact Information*\n
 
@@ -24,19 +25,20 @@ Email: miaolu [at] stanford [dot] edu
 \[[https://scholar.google.com/citations?hl=en&user=3jS17zQAAAAJ&view_op=list_works&sortby=pubdate Google Scholar]\] \[[https://github.com/MiaoLu3 GitHub]\] \[[https://www.linkedin.com/in/miao-lu-5bb9a31aa LinkedIn]\] \[[Curriculum_Vitae.pdf CV]\]
 ~~~
 
-== Industrial Experiences 
-
-*ByteDance Seed*, San Jose, USA. /Jun. 2025 - Sep.2025/ 
-- Research Scientist Intern in Foundations Models
-
-*Ubiquant Investment*, Shanghai, China. /Jun. 2022 - Sep. 2022/
-- Quantitative Research Intern in the AI Department
-
 == Selected Publications  
+
 
 - [https://arxiv.org/abs/2510.06727 Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
 with Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
 /Submitted, Sep, 2025/ \n
+
+- [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
+with Weiwei Sun, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
+/Submitted, Sep, 2025/ \n
+
+- [https://arxiv.org/abs/2602.10696 Robus Assortment Optimization from Observational Data]\n
+with Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet \n
+/arXiv preprint, Feb, 2026/ \n
 
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
