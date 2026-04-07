@@ -8,29 +8,27 @@ Authors with \* contributed equally.
 
 - [https://arxiv.org/abs/2602.10696 Robust Assortment Optimization from Observational Data]\n
 *Miao Lu*, Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet \n
-/arXiv preprint/, Feb, 2026 \[[ArXiv_PR2B.pdf *PDF*]\] \n
+/arXiv preprint, Feb 2026/ \[[ArXiv_PR2B.pdf *PDF*]\] \n
+
+- [https://arxiv.org/abs/2510.06727 Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression] \n 
+*Miao Lu*, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
+/Association for Computational Linguistics (ACL) 2026/  \[[ArXiv_SUPO.pdf *PDF*]\] \n
 
 == Before 2026
 
 - [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
-Weiwei Sun, *Miao Lu*, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
-/Under conference review/ \n
-/arXiv preprint/, Oct, 2025  \[[ArXiv_FoldGRPO.pdf *PDF*]\] \n
-
-- [https://arxiv.org/abs/2510.06727 Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
-*Miao Lu*, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
-/Under conference review/ \n
-/arXiv preprint/, Oct, 2025  \[[ArXiv_SUPO.pdf *PDF*]\] \n
+Weiwei Sun, *Miao Lu*, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen \n 
+/arXiv preprint, Oct 2025/  \[[ArXiv_FoldGRPO.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2508.07571 Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression]\n
-Xingwu Chen\*, *Miao Lu\**, Beining Wu, Difan Zou \n
+Xingwu Chen, *Miao Lu*, Beining Wu, Difan Zou \n
 /NeurIPS Workshop on Foundations of Reasoning in Language Models (FoRLM) 2025/  \n 
-/arXiv preprint/, Aug, 2025 \[[ArXiv_TTC.pdf *PDF*]\] \n
+/arXiv preprint, Aug 2025/  \[[ArXiv_TTC.pdf *PDF*]\] \n
 
 - [https://arxiv.org/abs/2502.06777  Learning an Optimal Assortment Policy under Observational Data]\n
 Yuxuan Han, Han Zhong, *Miao Lu*, Jose Blanchet, Zhengyuan Zhou \n
 /Under review in Management Science (MS)/ \n
-/arXiv preprint/, Feb, 2025 \[[ArXiv_PRB.pdf *PDF*]\]  \n
+/arXiv preprint, Feb 2025/ \[[ArXiv_PRB.pdf *PDF*]\]  \n
 
 - [https://openreview.net/forum?id=is4nCVkSFA Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model]\n
 Siyu Chen\*, Beining Wu\*, *Miao Lu*, Zhuoran Yang, Tianhao Wang \n

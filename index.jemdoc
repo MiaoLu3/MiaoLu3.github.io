@@ -28,22 +28,18 @@ Email: miaolu [at] stanford [dot] edu
 == Selected Publications  
 
 
-- [https://arxiv.org/abs/2510.06727 Scaling Multi-Turn LLM RL via End-to-End Summarization-based Context Management] \n 
-with Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
-/Submitted, Sep, 2025/ \n
-
 - [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
 with Weiwei Sun, Zhan Ling, Xuesong Yao, Kang Liu, Yiming Yang, Jiecao Chen \n 
-/Submitted, Sep, 2025/ \n
+/Submitted, Sep 2025/ \n
 
-- [https://arxiv.org/abs/2602.10696 Robust Assortment Optimization from Observational Data]\n
-with Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet \n
-/arXiv preprint, Feb, 2026/ \n
+- [https://arxiv.org/abs/2510.06727 Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression] \n 
+with Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen \n 
+/Association for Computational Linguistics (ACL) 2026/ \n
+
 
 - [https://arxiv.org/abs/2405.16436 Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer]\n 
 with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang \n 
 /Neural Information Processing Systems (NeurIPS) 2024/ \n
-
 
 - [https://arxiv.org/abs/2310.17074 Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates]\n 
 with Beining Wu, Xiaodong Yang, Difan Zou \n 
