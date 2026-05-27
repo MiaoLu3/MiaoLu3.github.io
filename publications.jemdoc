@@ -5,11 +5,13 @@ Authors with \* contributed equally.
 
 == 2026
 
-
+- [https://miaolu3.github.io/publications.html Towards Understanding Momemtum Acceleration in River-Valley Loss Landscape]\n
+*Miao Lu*, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li \n
+/ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026/ *Spotlight* \n
 
 - [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 
 Weiwei Sun, *Miao Lu*, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen \n 
-/International Conference on Machine Learning (ICML) 2026/  \[[ArXiv_FoldGRPO.pdf *PDF*]\] \n
+/International Conference on Machine Learning (ICML) 2026/  \[[ArXiv_FoldGRPO.pdf *PDF*]\] \[[https://github.com/sunnweiwei/FoldAgent *Code*]\] \n
 
 - [https://arxiv.org/abs/2508.07571 Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression]\n
 Xingwu Chen, *Miao Lu*, Beining Wu, Difan Zou \n
