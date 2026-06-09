@@ -14,9 +14,9 @@ Currently I am also a research scientist intern at NVIDIA Research. I previously
 
 *Research Interests*\n
 
-My recent research centers around reinforcement learning (RL) and LLM post-training.
+My recent research centers around RL, long-horizon LLM post-training.
 
-With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of RL, training dynamics and generalization properties of deep learning, and RL for operations and economics.
+With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of RL, training dynamics and generalization in deep learning, and RL for operations and economics.
 
 *Contact Information*\n
 
@@ -26,6 +26,11 @@ Email: miaolu [at] stanford [dot] edu
 ~~~
 
 == Selected Publications  
+
+
+- [https://arxiv.org/abs/2606.09052 INFUSER: Influence-Guided Self-Evolution Improves Reasoning] \n 
+with Siyu Chen, Beining Wu, Heejune Sheen, Fengzhuo Zhang,  \n Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang \n
+/arXiv preprint, Jun 2026/ \n
 
 
 - [https://arxiv.org/abs/2510.11967 Scaling Long-Horizon LLM Agent via Context Folding] \n 

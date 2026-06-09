@@ -5,6 +5,14 @@ Authors with \* contributed equally.
 
 == 2026
 
+- [https://arxiv.org/abs/2606.09052 INFUSER: Influence-Guided Self-Evolution Improves Reasoning] \n 
+Siyu Chen, *Miao Lu*, Beining Wu, Heejune Sheen, Fengzhuo Zhang, Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang \n
+/arXiv preprint, Jun 2026/ \[[ArXiv_INFUSER.pdf *PDF*]\] \[[https://github.com/FFishy-git/INFUSER *Code*]\] \n
+
+- [https://miaolu3.github.io/publications.html A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training] \n 
+Junze Ye\*, Jiayi Cheng\*, *Miao Lu\**, Michal Mankowski, Jose Blanchet, Mohsen Bayati \n
+/ICML Workshop on RL from World Feedback (RLxF) 2026/  \n
+
 - [https://miaolu3.github.io/publications.html Towards Understanding Momemtum Acceleration in River-Valley Loss Landscape]\n
 *Miao Lu*, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li \n
 /ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026/ *Spotlight* \n
