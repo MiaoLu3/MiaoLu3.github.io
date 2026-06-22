@@ -1,151 +1,471 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Publications</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Publications · Miao Lu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #fcfbf6;          /* very light warm cream */
+    --bg-deep: #f4f2ea;
+    --surface: #ffffff;     /* ivory card */
+    --ink: #1a1a15;         /* neutral near-black */
+    --ink-soft: #54534a;
+    --ink-faint: #89887d;
+    --line: #e3e1d5;
+    --clay: #3f861c;        /* bright grass green */
+    --clay-deep: #336e15;
+    --clay-soft: #e0ecca;
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    --maxw: 860px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  html { font-size: 91%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--clay-deep);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(51,110,21,0.36);
+    transition: border-color .2s ease, color .2s ease;
+  }
+  a:hover { border-bottom-color: var(--clay-deep); }
+
+  /* ---------- Dark theme ---------- */
+  :root[data-theme="dark"] {
+    --bg: #191a16;          /* warm dark */
+    --bg-deep: #131410;
+    --surface: #21221d;     /* dark card */
+    --ink: #ecebe1;         /* light warm */
+    --ink-soft: #b0aea3;
+    --ink-faint: #807f74;
+    --line: #32332c;
+    --clay: #9fae7e;        /* light sage accent */
+    --clay-deep: #b4c295;   /* brighter sage for links */
+    --clay-soft: #2a2f21;   /* dark sage tint */
+  }
+  :root[data-theme="dark"] .nav { background: rgba(25,26,22,0.5); }
+  :root[data-theme="dark"] a { border-bottom-color: rgba(180,194,149,0.3); }
+
+  /* theme toggle button */
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    padding: 0;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .theme-toggle:hover { color: var(--clay-deep); border-color: var(--clay); }
+  .theme-toggle svg { width: 17px; height: 17px; }
+  .theme-toggle .moon { display: none; }
+  :root[data-theme="dark"] .theme-toggle .sun { display: none; }
+  :root[data-theme="dark"] .theme-toggle .moon { display: block; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(252,251,246,0.4);
+    backdrop-filter: saturate(180%) blur(56px);
+    -webkit-backdrop-filter: saturate(180%) blur(56px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--ink);
+    letter-spacing: -.01em;
+    border: none;
+  }
+  .nav-links { display: flex; gap: 26px; align-items: center; }
+  .nav-links a {
+    color: var(--ink-soft);
+    font-size: .9rem;
+    border: none;
+  }
+  .nav-links a:hover { color: var(--clay-deep); }
+  .nav-links a.current { color: var(--clay-deep); }
+
+  /* ---------- Layout ---------- */
+  main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 96px; }
+  section { padding-top: 72px; }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin: 0 0 14px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.0rem;
+    letter-spacing: -.02em;
+    color: var(--ink);
+    margin: 0 0 36px;
+    line-height: 1.15;
+  }
+
+  /* ---------- Publications ---------- */
+  .year-label {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 40px 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .year-label:first-of-type { margin-top: 0; }
+
+  .pub { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .pub:last-child { border-bottom: none; }
+  /* drop the divider on the last pub right before a year label */
+  .pub:has(+ .year-label) { border-bottom: none; }
+  .pub .title { font-weight: 600; font-size: 1.04rem; color: var(--ink); line-height: 1.5; }
+  .pub .title a { color: var(--ink); border-bottom: none; }
+  .pub .title a:hover { color: var(--clay-deep); border-bottom: none; }
+  .pub .authors { font-size: .92rem; color: var(--ink-soft); margin-top: 6px; }
+  .pub .authors .me { color: var(--ink); font-weight: 600; }
+  .pub .venue { font-size: .9rem; color: var(--ink-faint); margin-top: 5px; font-style: italic; }
+  .pub .venue + .venue { margin-top: 2px; }
+  .tag {
+    font-style: normal;
+    display: inline-block;
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--clay-deep);
+    background: var(--clay-soft);
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 5px;
+    vertical-align: 1px;
+  }
+  .pub .res { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .pub .res a {
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px 12px;
+    background: var(--surface);
+  }
+  .pub .res a:hover { border-color: var(--clay); color: var(--clay-deep); background: var(--clay-soft); }
+
+  .note { font-size: .9rem; color: var(--ink-faint); margin: 0 0 6px; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    background: var(--bg-deep);
+  }
+  .footer-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 40px 28px 56px;
+    color: var(--ink-faint);
+    font-size: .85rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-inner a { color: var(--ink-soft); border: none; }
+  .footer-inner a:hover { color: var(--clay-deep); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .nav-links { gap: 16px; }
+    .section-title { font-size: 1.7rem; }
+  }
+</style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Homepage</div>
-<div class="menu-item"><a href="index.html">About&nbsp;Me</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="experiences.html">Experiences</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Publications</h1>
-</div>
-<p>Authors with * contributed equally.</p>
-<h2>2026</h2>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2606.09052">INFUSER: Influence-Guided Self-Evolution Improves Reasoning</a> <br /> 
-Siyu Chen, <b>Miao Lu</b>, Beining Wu, Heejune Sheen, Fengzhuo Zhang, Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang <br />
-<i>arXiv preprint, Jun 2026</i> [<a href="ArXiv_INFUSER.pdf"><b>PDF</b></a>] [<a href="https://github.com/FFishy-git/INFUSER"><b>Code</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://miaolu3.github.io/publications.html">A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training</a> <br /> 
-Junze Ye*, Jiayi Cheng*, <b>Miao Lu*</b>, Michal Mankowski, Jose Blanchet, Mohsen Bayati <br />
-<i>ICML Workshop on RL from World Feedback (RLxF) 2026</i>  <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://miaolu3.github.io/publications.html">Towards Understanding Momemtum Acceleration in River-Valley Loss Landscape</a><br />
-<b>Miao Lu</b>, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li <br />
-<i>ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026</i> <b>Spotlight</b> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2510.11967">Scaling Long-Horizon LLM Agent via Context Folding</a> <br /> 
-Weiwei Sun, <b>Miao Lu</b>, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen <br /> 
-<i>International Conference on Machine Learning (ICML) 2026</i>  [<a href="ArXiv_FoldGRPO.pdf"><b>PDF</b></a>] [<a href="https://github.com/sunnweiwei/FoldAgent"><b>Code</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2508.07571">Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression</a><br />
-Xingwu Chen, <b>Miao Lu</b>, Beining Wu, Difan Zou <br />
-<i>NeurIPS Workshop on Foundations of Reasoning in Language Models (FoRLM) 2025</i>  <br /> 
-<i>International Conference on Machine Learning (ICML) 2026</i>  [<a href="ArXiv_TTC.pdf"><b>PDF</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2602.10696">Robust Assortment Optimization from Observational Data</a><br />
-<b>Miao Lu</b>, Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet <br />
-<i>arXiv preprint, Feb 2026</i> [<a href="ArXiv_PR2B.pdf"><b>PDF</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2510.06727">Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression</a> <br /> 
-<b>Miao Lu</b>, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen <br /> 
-<i>Association for Computational Linguistics (ACL) 2026</i>  [<a href="ArXiv_SUPO.pdf"><b>PDF</b></a>] <br /></p>
-</li>
-</ul>
-<h2>Before 2026</h2>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2502.06777">Learning an Optimal Assortment Policy under Observational Data</a><br />
-Yuxuan Han, Han Zhong, <b>Miao Lu</b>, Jose Blanchet, Zhengyuan Zhou <br />
-<i>Under review in Management Science (MS)</i> <br />
-<i>arXiv preprint, Feb 2025</i> [<a href="ArXiv_PRB.pdf"><b>PDF</b></a>] [<a href="Robust_Assortment_Optimization_Slides.pdf"><b>Slides</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://openreview.net/forum?id=is4nCVkSFA">Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model</a><br />
-Siyu Chen*, Beining Wu*, <b>Miao Lu</b>, Zhuoran Yang, Tianhao Wang <br />
-<i>NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L) 2024</i> <b>Oral</b>  <br /> 
-<i>International Conference on Learning Representations (ICLR) 2025</i> <b>Oral</b> [<a href="ICLR2025SingleIndex.pdf"><b>PDF</b></a>] [<a href="M3L_slides.pdf"><b>Slides</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2405.16436">Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer</a><br /> 
-Zhihan Liu*, <b>Miao Lu*</b>, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang <br /> 
-<i>ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024</i> <br />
-<i>Neural Information Processing Systems (NeurIPS) 2024</i> [<a href="ArXiv_RPO.pdf"><b>PDF</b></a>] [<a href="https://github.com/YSLIU627/Regularized-Preference-Optimization"><b>Code</b></a>] [<a href="Poster_RPO.pdf"><b>Poster</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2404.03578">Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm</a><br /> 
-<b>Miao Lu*</b>, Han Zhong*, Tong Zhang, Jose Blanchet <br /> 
-<i>ICML Workshop on Aligning Reinforcement Learning Experimentalists and Theorists (ARLET) 2024</i> <br />
-<i>Neural Information Processing Systems (NeurIPS) 2024</i> [<a href="ArXiv_DRRL_Interactive.pdf"><b>PDF</b></a>]  [<a href="NeurIPS2024IDCSlides.pdf"><b>Slides</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2310.17074">Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates</a><br /> 
-<b>Miao Lu*</b>, Beining Wu*, Xiaodong Yang, Difan Zou <br /> 
-<i>NeurIPS Workshop on Mathematics of Modern Machine Learning (M3L) 2023</i> <br />
-<i>International Conference on Learning Representations (ICLR) 2024</i> [<a href="ArXiv_Benign_Oscillation.pdf"><b>PDF</b></a>] [<a href="Benign_Oscillation_Poster.pdf"><b>Poster</b></a>] <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2305.18258">Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration</a><br /> 
-Zhihan Liu*, <b>Miao Lu*</b>, Wei Xiong*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang <br /> 
-<i>Neural Information Processing Systems (NeurIPS) 2023</i> <b>Spotlight</b>  (short version)  <br />
-<i>Under review in Operations Research (OR)  </i> (long version) [<a href="ArXiv_MEX.pdf"><b>PDF</b></a>] [<a href="https://github.com/agentification/MEX"><b>Code</b></a>] [<a href="NeurIPS2023MEX_Slides.pdf"><b>Slides</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2305.09659">Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage</a><br /> 
-Jose Blanchet, <b>Miao Lu</b>, Tong Zhang, Han Zhong (alphabetical) <br /> 
-<i>Neural Information Processing Systems (NeurIPS) 2023</i> (short version)<br />
-<i>Major revision in Mathematics of Operations Research (MOR)  </i> (long version)  [<a href="ArXiv_Double_Pessimism.pdf"><b>PDF</b></a>] [<a href="NeurIPS2023DoublePessimism_Slides.pdf"><b>Slides</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2205.13589">Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes</a><br />
-<b>Miao Lu</b>, Yifei Min, Zhaoran Wang, Zhuoran Yang <br />
-<i>International Conference on Learning Representations (ICLR) 2023</i>  [<a href="ArXiv_Pessimism_Confounded_POMDP.pdf"><b>PDF</b></a>] [<a href="informs2022.pdf"><b>Slides</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://proceedings.mlr.press/v162/liu22l.html">Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy</a><br />
-Zhihan Liu*, <b>Miao Lu*</b>, Zhaoran Wang, Michael I. Jordan, Zhuoran Yang <br />
-<i>International Conference on Machine Learning (ICML) 2022</i> [<a href="ICML2022RLMEE.pdf"><b>PDF</b></a>] [<a href="https://github.com/YSLIU627/RL-for-Markov-Exchange-Economy"><b>Code</b></a>] [<a href="ICML2022RLMEE_Slides.pdf"><b>Slides</b></a>]<br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://openreview.net/forum?id=O1DEtITim__">Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, and No Retraining</a><br />
-<b>Miao Lu*</b>, Xiaolong Luo*, Tianlong Chen, Wuyang Chen, Dong Liu, Zhangyang Wang <br />
-<i>International Conference on Learning Representations (ICLR) 2022</i> <b>Spotlight</b> [<a href="ICLR2022SFWPruning.pdf"><b>PDF</b></a>] [<a href="https://github.com/VITA-Group/SFW-Once-for-All-Pruning"><b>Code</b></a>]  [<a href="ICLR2022SFWPruning_Slides.pdf"><b>Slides</b></a>]<br /> </p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2112.10513">Learning Robust Policy against Disturbance in Transition Dynamics via State-Conservative Policy Optimization</a><br />
-Yufei Kuang, <b>Miao Lu</b>, Jie Wang, Qi Zhou, Bin Li, Houqiang Li <br />
-<i>Association for the Advancement of Artificial Intelligence (AAAI) 2022</i> [<a href="AAAI2022SCPO.pdf"><b>PDF</b></a>] [<a href="https://github.com/MIRALab-USTC/RL-SCPO"><b>Code</b></a>] [<a href="AAAI2022SCPO_Slides.pdf"><b>Slides</b></a>]</p>
-</li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-Copyright 2022 Miao Lu. Page generated 2026-06-08 20:29:21 PDT.
-</div>
-</div>
-</td>
-</tr>
-</table>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Miao Lu</a>
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="publications.html" class="current">Publications</a>
+      <a href="index.html#experiences">Experiences</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<script>
+  (function () {
+    var root = document.documentElement;
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.dataset.theme = 'dark';
+      }
+    } catch (e) {}
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#themeToggle')) return;
+      var dark = root.dataset.theme === 'dark';
+      root.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+  })();
+</script>
+
+<main>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications">
+    <p class="eyebrow">Research</p>
+    <h2 class="section-title">Publications</h2>
+    <p class="note">Authors with * contributed equally.</p>
+
+    <div class="year-label">2026</div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2606.09052">INFUSER: Influence-Guided Self-Evolution Improves Reasoning</a></div>
+      <div class="authors">Siyu Chen, <span class="me">Miao Lu</span>, Beining Wu, Heejune Sheen, Fengzhuo Zhang, Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang</div>
+      <div class="venue">arXiv preprint, Jun 2026</div>
+      <div class="res">
+        <a href="ArXiv_INFUSER.pdf">PDF</a>
+        <a href="https://github.com/FFishy-git/INFUSER">Code</a>
+        <a href="https://y-agent.github.io/infuser/">Project Page</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title">A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training</div>
+      <div class="authors">Junze Ye*, Jiayi Cheng*, <span class="me">Miao Lu*</span>, Michal Mankowski, Jose Blanchet, Mohsen Bayati</div>
+      <div class="venue">ICML Workshop on RL from World Feedback (RLxF) 2026</div>
+      <div class="res">
+        <a href="miaolu3.github.io">PDF (coming soon)</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Towards Understanding Momentum Acceleration in River-Valley Loss Landscape</div>
+      <div class="authors"><span class="me">Miao Lu</span>, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li</div>
+      <div class="venue">ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026 <span class="tag">Spotlight</span></div>
+      <div class="res">
+        <a href="miaolu3.github.io">PDF (coming soon)</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2510.11967">Scaling Long-Horizon LLM Agent via Context Folding</a></div>
+      <div class="authors">Weiwei Sun, <span class="me">Miao Lu</span>, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen</div>
+      <div class="venue">International Conference on Machine Learning (ICML) 2026</div>
+      <div class="res">
+        <a href="ArXiv_FoldGRPO.pdf">PDF</a>
+        <a href="https://github.com/sunnweiwei/FoldAgent">Code</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2508.07571">Towards Theoretical Understanding of Transformer Test-Time Computing: Investigation on In-Context Linear Regression</a></div>
+      <div class="authors">Xingwu Chen, <span class="me">Miao Lu</span>, Beining Wu, Difan Zou</div>
+      <div class="venue">NeurIPS Workshop on Foundations of Reasoning in Language Models (FoRLM) 2025</div>
+      <div class="venue">International Conference on Machine Learning (ICML) 2026</div>
+      <div class="res"><a href="ArXiv_TTC.pdf">PDF</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2602.10696">Robust Assortment Optimization from Observational Data</a></div>
+      <div class="authors"><span class="me">Miao Lu</span>, Yuxuan Han, Han Zhong, Zhengyuan Zhou, Jose Blanchet</div>
+      <div class="venue">arXiv preprint, Feb 2026</div>
+      <div class="res"><a href="ArXiv_PR2B.pdf">PDF</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2510.06727">Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression</a></div>
+      <div class="authors"><span class="me">Miao Lu</span>, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen</div>
+      <div class="venue">Association for Computational Linguistics (ACL) 2026</div>
+      <div class="res">
+        <a href="ArXiv_SUPO.pdf">PDF</a>
+        <a href="Poster_SUPO.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="year-label">2025</div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2502.06777">Learning an Optimal Assortment Policy under Observational Data</a></div>
+      <div class="authors">Yuxuan Han, Han Zhong, <span class="me">Miao Lu</span>, Jose Blanchet, Zhengyuan Zhou</div>
+      <div class="venue">Under review in Management Science (MS)</div>
+      <div class="venue">arXiv preprint, Feb 2025</div>
+      <div class="res">
+        <a href="ArXiv_PRB.pdf">PDF</a>
+        <a href="Robust_Assortment_Optimization_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://openreview.net/forum?id=is4nCVkSFA">Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model</a></div>
+      <div class="authors">Siyu Chen*, Beining Wu*, <span class="me">Miao Lu</span>, Zhuoran Yang, Tianhao Wang</div>
+      <div class="venue">NeurIPS Workshop on Mathematics of Modern ML (M3L) 2024 <span class="tag">Oral</span></div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2025 <span class="tag">Oral</span></div>
+      <div class="res">
+        <a href="ICLR2025SingleIndex.pdf">PDF</a>
+        <a href="M3L_slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="year-label">2024</div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2405.16436">Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer</a></div>
+      <div class="authors">Zhihan Liu*, <span class="me">Miao Lu*</span>, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang</div>
+      <div class="venue">ICML Workshop on Aligning RL Experimentalists and Theorists (ARLET) 2024</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2024</div>
+      <div class="res">
+        <a href="ArXiv_RPO.pdf">PDF</a>
+        <a href="https://github.com/YSLIU627/Regularized-Preference-Optimization">Code</a>
+        <a href="Poster_RPO.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2404.03578">Distributionally Robust Reinforcement Learning with Interactive Data Collection: Fundamental Hardness and Near-Optimal Algorithm</a></div>
+      <div class="authors"><span class="me">Miao Lu*</span>, Han Zhong*, Tong Zhang, Jose Blanchet</div>
+      <div class="venue">ICML Workshop on Aligning RL Experimentalists and Theorists (ARLET) 2024</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2024</div>
+      <div class="res">
+        <a href="ArXiv_DRRL_Interactive.pdf">PDF</a>
+        <a href="NeurIPS2024IDCSlides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2310.17074">Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates</a></div>
+      <div class="authors"><span class="me">Miao Lu*</span>, Beining Wu*, Xiaodong Yang, Difan Zou</div>
+      <div class="venue">NeurIPS Workshop on Mathematics of Modern ML (M3L) 2023</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2024</div>
+      <div class="res">
+        <a href="ArXiv_Benign_Oscillation.pdf">PDF</a>
+        <a href="Benign_Oscillation_Poster.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="year-label">2023</div>
+    
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2305.18258">Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration</a></div>
+      <div class="authors">Zhihan Liu*, <span class="me">Miao Lu*</span>, Wei Xiong*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2023 <span class="tag">Spotlight</span></div>
+      <div class="venue">Under review in Operations Research (OR)</div>
+      <div class="res">
+        <a href="ArXiv_MEX.pdf">PDF</a>
+        <a href="https://github.com/agentification/MEX">Code</a>
+        <a href="NeurIPS2023MEX_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2305.09659">Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage</a></div>
+      <div class="authors">Jose Blanchet, <span class="me">Miao Lu</span>, Tong Zhang, Han Zhong (alphabetical)</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2023</div>
+      <div class="venue">Major revision in Mathematics of Operations Research (MOR)</div>
+      <div class="res">
+        <a href="ArXiv_Double_Pessimism.pdf">PDF</a>
+        <a href="NeurIPS2023DoublePessimism_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2205.13589">Pessimism in the Face of Confounders: Provably Efficient Offline Reinforcement Learning in Partially Observable Markov Decision Processes</a></div>
+      <div class="authors"><span class="me">Miao Lu</span>, Yifei Min, Zhaoran Wang, Zhuoran Yang</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2023</div>
+      <div class="res">
+        <a href="ArXiv_Pessimism_Confounded_POMDP.pdf">PDF</a>
+        <a href="informs2022.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="year-label">2022</div>
+
+    <div class="pub">
+      <div class="title"><a href="https://proceedings.mlr.press/v162/liu22l.html">Welfare Maximization in Competitive Equilibrium: Reinforcement Learning for Markov Exchange Economy</a></div>
+      <div class="authors">Zhihan Liu*, <span class="me">Miao Lu*</span>, Zhaoran Wang, Michael I. Jordan, Zhuoran Yang</div>
+      <div class="venue">International Conference on Machine Learning (ICML) 2022</div>
+      <div class="res">
+        <a href="ICML2022RLMEE.pdf">PDF</a>
+        <a href="https://github.com/YSLIU627/RL-for-Markov-Exchange-Economy">Code</a>
+        <a href="ICML2022RLMEE_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://openreview.net/forum?id=O1DEtITim__">Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, and No Retraining</a></div>
+      <div class="authors"><span class="me">Miao Lu*</span>, Xiaolong Luo*, Tianlong Chen, Wuyang Chen, Dong Liu, Zhangyang Wang</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2022 <span class="tag">Spotlight</span></div>
+      <div class="res">
+        <a href="ICLR2022SFWPruning.pdf">PDF</a>
+        <a href="https://github.com/VITA-Group/SFW-Once-for-All-Pruning">Code</a>
+        <a href="ICLR2022SFWPruning_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2112.10513">Learning Robust Policy against Disturbance in Transition Dynamics via State-Conservative Policy Optimization</a></div>
+      <div class="authors">Yufei Kuang, <span class="me">Miao Lu</span>, Jie Wang, Qi Zhou, Bin Li, Houqiang Li</div>
+      <div class="venue">Association for the Advancement of Artificial Intelligence (AAAI) 2022</div>
+      <div class="res">
+        <a href="AAAI2022SCPO.pdf">PDF</a>
+        <a href="https://github.com/MIRALab-USTC/RL-SCPO">Code</a>
+        <a href="AAAI2022SCPO_Slides.pdf">Slides</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Miao Lu</span>
+    <span>Stanford University · <a href="mailto:miaolu@stanford.edu">miaolu [at] stanford [dot] edu</a></span>
+  </div>
+</footer>
+
 </body>
 </html>

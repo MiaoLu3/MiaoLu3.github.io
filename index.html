@@ -1,89 +1,666 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Miao Lu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #fcfbf6;          /* very light warm cream */
+    --bg-deep: #f4f2ea;
+    --surface: #ffffff;     /* ivory card */
+    --ink: #1a1a15;         /* neutral near-black */
+    --ink-soft: #54534a;
+    --ink-faint: #89887d;
+    --line: #e3e1d5;
+    --clay: #3f861c;        /* bright grass green */
+    --clay-deep: #336e15;
+    --clay-soft: #e0ecca;
+    --serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+    --maxw: 860px;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  html { font-size: 91%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--clay-deep);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(51,110,21,0.36);
+    transition: border-color .2s ease, color .2s ease;
+  }
+  a:hover { border-bottom-color: var(--clay-deep); }
+
+  /* ---------- Dark theme ---------- */
+  :root[data-theme="dark"] {
+    --bg: #191a16;          /* warm dark */
+    --bg-deep: #131410;
+    --surface: #21221d;     /* dark card */
+    --ink: #ecebe1;         /* light warm */
+    --ink-soft: #b0aea3;
+    --ink-faint: #807f74;
+    --line: #32332c;
+    --clay: #9fae7e;        /* light sage accent */
+    --clay-deep: #b4c295;   /* brighter sage for links */
+    --clay-soft: #2a2f21;   /* dark sage tint */
+  }
+  :root[data-theme="dark"] .nav { background: rgba(25,26,22,0.5); }
+  :root[data-theme="dark"] a { border-bottom-color: rgba(180,194,149,0.3); }
+  :root[data-theme="dark"] .hero-photo { filter: saturate(0.95) brightness(0.92); }
+
+  /* theme toggle button */
+  .theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--surface);
+    color: var(--ink-soft);
+    cursor: pointer;
+    padding: 0;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .theme-toggle:hover { color: var(--clay-deep); border-color: var(--clay); }
+  .theme-toggle svg { width: 17px; height: 17px; }
+  .theme-toggle .moon { display: none; }
+  :root[data-theme="dark"] .theme-toggle .sun { display: none; }
+  :root[data-theme="dark"] .theme-toggle .moon { display: block; }
+
+  /* ---------- Nav ---------- */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(252,251,246,0.4);
+    backdrop-filter: saturate(180%) blur(56px);
+    -webkit-backdrop-filter: saturate(180%) blur(56px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-name {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--ink);
+    letter-spacing: -.01em;
+  }
+  .nav-links { display: flex; gap: 26px; align-items: center; }
+  .nav-links a {
+    color: var(--ink-soft);
+    font-size: .9rem;
+    border: none;
+  }
+  .nav-links a:hover { color: var(--clay-deep); }
+
+  /* ---------- Layout ---------- */
+  main { max-width: var(--maxw); margin: 0 auto; padding: 0 28px 96px; }
+  section { padding-top: 76px; }
+
+  .eyebrow {
+    font-family: var(--sans);
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin: 0 0 14px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.0rem;
+    letter-spacing: -.02em;
+    color: var(--ink);
+    margin: 0 0 36px;
+    line-height: 1.15;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero { padding-top: 72px; }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 240px;
+    gap: 52px;
+    align-items: center;
+  }
+  .hero-text .hero-bio:first-child { margin-top: 0; }
+  .hero-greeting {
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--clay);
+    margin: 0 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-greeting::before {
+    content: "";
+    width: 26px;
+    height: 1.5px;
+    background: var(--clay);
+    display: inline-block;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.05;
+    letter-spacing: -.025em;
+    margin: 0 0 14px;
+  }
+  .hero .role {
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 500;
+  }
+  .hero .role .dot { color: var(--clay); margin: 0 8px; }
+
+  .hero-photo-wrap { position: relative; }
+  .hero-photo {
+    width: 100%;
+    height: auto;
+    filter: saturate(0.96);
+    display: block;
+  }
+
+  .hero-bio {
+    margin-top: 30px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--ink);
+    max-width: 64ch;
+  }
+  .hero-bio a { border-bottom: none; }
+  .hero-bio a:hover { border-bottom: 1px solid var(--clay-deep); color: var(--clay-deep); }
+  .hero-text ul { margin: 16px 0 0; padding-left: 20px; }
+  .hero-text li { margin-bottom: 11px; line-height: 1.6; font-size: 0.96rem; }
+  .hero-text li:last-child { margin-bottom: 0; }
+  .hero-text li::marker { color: var(--clay); }
+  .hero-bio.secondary {
+    font-family: var(--sans);
+    font-size: 0.96rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin-top: 20px;
+    max-width: 64ch;
+  }
+
+  .icon-row {
+    display: flex;
+    gap: 22px;
+    margin-top: 18px;
+    justify-content: center;
+  }
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink-soft);
+    border: none;
+    transition: transform .18s ease, color .2s ease;
+  }
+  .icon-btn svg { width: 22px; height: 22px; }
+  .icon-btn:hover {
+    color: var(--clay-deep);
+    transform: translateY(-2px);
+  }
+
+  .contact {
+    margin-top: 30px;
+    font-size: .92rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Publications ---------- */
+  .year-label {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 40px 0 6px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  .year-label:first-of-type { margin-top: 0; }
+
+  .pub { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .pub:last-child { border-bottom: none; }
+  /* drop the divider on the last pub right before a year label */
+  .pub:has(+ .year-label) { border-bottom: none; }
+  .pub .title { font-weight: 600; font-size: 1.04rem; color: var(--ink); line-height: 1.5; }
+  .pub .title a { color: var(--ink); border-bottom: none; }
+  .pub .title a:hover { color: var(--clay-deep); border-bottom: none; }
+  .pub .authors { font-size: .92rem; color: var(--ink-soft); margin-top: 6px; }
+  .pub .authors .me { color: var(--ink); font-weight: 600; }
+  .pub .venue { font-size: .9rem; color: var(--ink-faint); margin-top: 5px; font-style: italic; }
+  .pub .venue + .venue { margin-top: 2px; }
+  .tag {
+    font-style: normal;
+    display: inline-block;
+    font-size: .68rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: var(--clay-deep);
+    background: var(--clay-soft);
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-left: 5px;
+    vertical-align: 1px;
+  }
+  .pub .res { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .pub .res a {
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 3px 12px;
+    background: var(--surface);
+  }
+  .pub .res a:hover { border-color: var(--clay); color: var(--clay-deep); background: var(--clay-soft); }
+
+  .note { font-size: .9rem; color: var(--ink-faint); margin: 0 0 6px; }
+
+  /* ---------- Experiences ---------- */
+  .exp-group { margin-bottom: 40px; }
+  .exp-group > h3 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 16px;
+  }
+  .exp-item { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .exp-item:last-child { border-bottom: none; }
+  .exp-head { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .exp-head .org { font-weight: 600; color: var(--ink); display: inline-flex; align-items: center; gap: 10px; }
+  .org-logo { height: 19px; width: auto; display: block; flex: none; }
+  .org-logo.emblem { height: 24px; }
+  /* dark theme swaps to pre-recolored vector variants (no rasterizing filter) */
+  .org-logo.dark { display: none; }
+  :root[data-theme="dark"] .org-logo.light { display: none; }
+  :root[data-theme="dark"] .org-logo.dark { display: block; }
+  /* TTIC is a raster PNG (no vector available) — soften it in dark mode */
+  :root[data-theme="dark"] .org-logo.raster { filter: grayscale(1) invert(1) opacity(0.9); }
+  .exp-head .date { color: var(--ink-faint); font-size: .86rem; white-space: nowrap; }
+  .exp-item ul { margin: 6px 0 0; padding-left: 18px; }
+  .exp-item li { color: var(--ink-soft); font-size: .93rem; }
+
+  .simple-list { list-style: none; padding: 0; margin: 0; }
+  .simple-list li {
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+    font-size: .93rem;
+  }
+  .simple-list li:last-child { border-bottom: none; }
+  .simple-list li b { color: var(--ink); font-weight: 600; }
+
+  .svc-label { font-weight: 600; color: var(--ink); font-size: .93rem; }
+  .svc-list { margin: 4px 0 0; color: var(--ink-soft); font-size: .9rem; line-height: 1.6; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .subcard h4 {
+    font-size: .78rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--clay);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    background: var(--bg-deep);
+  }
+  .footer-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 40px 28px 100px;
+    color: var(--ink-faint);
+    font-size: .85rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-inner a { color: var(--ink-soft); border: none; }
+  .footer-inner a:hover { color: var(--clay-deep); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .hero { padding-top: 48px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 22px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-photo { display: none; }
+    .icon-row { justify-content: flex-start; margin-top: 0; }
+    .hero-bio { font-size: 1.02rem; }
+    .two-col { grid-template-columns: 1fr; }
+    .nav-links { gap: 16px; }
+    .section-title { font-size: 1.7rem; }
+  }
+</style>
 </head>
 <body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Homepage</div>
-<div class="menu-item"><a href="index.html" class="current">About&nbsp;Me</a></div>
-<div class="menu-item"><a href="publications.html">Publications</a></div>
-<div class="menu-item"><a href="experiences.html">Experiences</a></div>
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Miao Lu</h1>
-</div>
-<table class="imgtable"><tr><td>
-<img src="profile_seattle.png" alt="alt text" width="325px" height="325px" />&nbsp;</td>
-<td align="left"><p><b>About Me</b><br /></p>
-<p>Welcome to my homepage!</p>
-<p>I am a third-year Ph.D. candidate from <a href="https://msande.stanford.edu">the Department of Management Science and Engineering (MS&amp;E)</a> at <a href="https://www.stanford.edu">Stanford University</a>, advised by <a href="https://joseblanchet.com">Prof. Jose Blanchet</a>.
-I obtained my Bachelor's degree in Mathematics from the <a href="http://en.ustc.edu.cn">University of Science and Technology of China (USTC)</a>.
-Currently I am also a research scientist intern at NVIDIA Research. I previously interned at ByteDance Seed and Ubiquant Investment.</p>
-<p><b>Research Interests</b><br /></p>
-<p>My recent research centers around RL, long-horizon LLM post-training.</p>
-<p>With backgrounds in probability and statistics, my past research includes mathematical theory and algorithm design of RL, training dynamics and generalization in deep learning, and RL for operations and economics.</p>
-<p><b>Contact Information</b><br /></p>
-<p>Email: miaolu <a href="at">at</a> stanford <a href="dot">dot</a> edu</p>
-<p>[<a href="https://scholar.google.com/citations?hl=en&amp;user=3jS17zQAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>] [<a href="https://github.com/MiaoLu3">GitHub</a>] [<a href="https://www.linkedin.com/in/miao-lu-5bb9a31aa">LinkedIn</a>] [<a href="Curriculum_Vitae.pdf">CV</a>]</p>
-</td></tr></table>
-<h2>Selected Publications  </h2>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2606.09052">INFUSER: Influence-Guided Self-Evolution Improves Reasoning</a> <br /> 
-with Siyu Chen, Beining Wu, Heejune Sheen, Fengzhuo Zhang,  <br /> Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang <br />
-<i>arXiv preprint, Jun 2026</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2510.11967">Scaling Long-Horizon LLM Agent via Context Folding</a> <br /> 
-with Weiwei Sun, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen <br /> 
-<i>International Conference on Machine Learning (ICML) 2026</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2510.06727">Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression</a> <br /> 
-with Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen <br /> 
-<i>Association for Computational Linguistics (ACL) 2026</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2405.16436">Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer</a><br /> 
-with Zhihan Liu, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang <br /> 
-<i>Neural Information Processing Systems (NeurIPS) 2024</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2310.17074">Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates</a><br /> 
-with Beining Wu, Xiaodong Yang, Difan Zou <br /> 
-<i>International Conference on Learning Representations (ICLR) 2024</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2305.18258">Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration</a><br /> 
-with Zhihan Liu, Wei Xiong, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang <br /> 
-<i>Neural Information Processing Systems (NeurIPS) 2023</i> <br /></p>
-</li>
-</ul>
-<ul>
-<li><p><a href="https://arxiv.org/abs/2305.09659">Double Pessimism is Provably Efficient for Distributionally Robust Offline Reinforcement Learning: Generic Algorithm and Robust Partial Coverage</a><br /> 
-with Jose Blanchet, Tong Zhang, Han Zhong <br /> 
-<i>Neural Information Processing Systems (NeurIPS) 2023</i> <br /></p>
-</li>
-</ul>
-<div id="footer">
-<div id="footer-text">
-Copyright 2022 Miao Lu. Page generated 2026-06-08 20:34:34 PDT.
-</div>
-</div>
-</td>
-</tr>
-</table>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-name">Miao Lu</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="#experiences">Experiences</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<script>
+  (function () {
+    var root = document.documentElement;
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        root.dataset.theme = 'dark';
+      }
+    } catch (e) {}
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('#themeToggle')) return;
+      var dark = root.dataset.theme === 'dark';
+      root.dataset.theme = dark ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+    });
+  })();
+</script>
+
+<main>
+
+  <!-- ===================== HERO / ABOUT ===================== -->
+  <section id="about" class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-bio">
+        I study reinforcement learning and optimization. I work on building evolving agents that handle long-horizon tasks. Overview:
+        <ul>
+          <li><strong>Long-horizon & self-evolving agents: </strong><a href="https://arxiv.org/abs/2510.06727">SUPO</a> and <a href="https://arxiv.org/abs/2510.11967">Context-Folding</a> (agent actively managing its context optimized by end-to-end RL), <a href="https://arxiv.org/abs/2606.09052">INFUSER</a> (RL with self-synthesized training data).</li>
+          <li><strong>Algorithmic foundation of RL: </strong> <a href="https://arxiv.org/abs/2405.16436">RPO</a> (overoptimization in RLHF), <a href="https://arxiv.org/abs/2305.18258">MEX</a> (unified RL exploration strategy).</li>
+          <li><strong>Optimization in deep learning: </strong><a href="https://arxiv.org/abs/2310.17074">Benign Oscillation</a> (generalization benefit of large LR), <a href="https://miaolu3.github.io">Momentum in River-valley</a>.</li>
+        </ul>
+        </p>
+        <p class="hero-bio secondary">
+          I am a 3rd-year Ph.D. candidate at
+          <a href="https://msande.stanford.edu">Management Science &amp; Engineering</a>,
+          <a href="https://www.stanford.edu">Stanford University</a>, advised by
+          <a href="https://joseblanchet.com">Prof. Jose Blanchet</a>.
+          I received my B.S. in Mathematics from the
+          <a href="http://en.ustc.edu.cn">University of Science and Technology of China</a>.
+          I interned at NVIDIA Research, ByteDance Seed, and Ubiquant Investment.
+        </p>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="profile_crop.png" alt="Miao Lu" />
+        <div class="icon-row">
+          <a class="icon-btn" href="Curriculum_Vitae.pdf" title="Curriculum Vitae" aria-label="Curriculum Vitae">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><line x1="8" y1="9" x2="10" y2="9"/></svg>
+          </a>
+          <a class="icon-btn" href="https://scholar.google.com/citations?hl=en&user=3jS17zQAAAAJ&view_op=list_works&sortby=pubdate" title="Google Scholar" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5"/></svg>
+          </a>
+          <a class="icon-btn" href="https://github.com/MiaoLu3" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/miao-lu-5bb9a31aa" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.5C0 23.2.8 24 1.77 24h20.45c.98 0 1.78-.8 1.78-1.76V1.74C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="contact">miaolu [at] stanford [dot] edu</p>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications">
+    <p class="eyebrow">Research</p>
+    <h2 class="section-title">Selected Publications and Preprints</h2>
+    <p class="note">Authors with * contributed equally. See full publication list in <a href="publications.html">Publications</a></p>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2606.09052">INFUSER: Influence-Guided Self-Evolution Improves Reasoning</a></div>
+      <div class="authors">Siyu Chen, <span class="me">Miao Lu</span>, Beining Wu, Heejune Sheen, Fengzhuo Zhang, Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang</div>
+      <div class="venue">arXiv preprint, Jun 2026</div>
+      <div class="res">
+        <a href="ArXiv_INFUSER.pdf">PDF</a>
+        <a href="https://github.com/FFishy-git/INFUSER">Code</a>
+        <a href="https://y-agent.github.io/infuser/">Project Page</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title">A Few Teacher Steps Go a Long Way: Cost-Efficient On-Policy Data Augmentation for Agent Post-Training</div>
+      <div class="authors">Junze Ye*, Jiayi Cheng*, <span class="me">Miao Lu*</span>, Michal Mankowski, Jose Blanchet, Mohsen Bayati</div>
+      <div class="venue">ICML Workshop on RL from World Feedback (RLxF) 2026</div>
+      <div class="res">
+        <a href="miaolu3.github.io">PDF (coming soon)</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title">Towards Understanding Momentum Acceleration in River-Valley Loss Landscape</div>
+      <div class="authors"><span class="me">Miao Lu</span>, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li</div>
+      <div class="venue">ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026 <span class="tag">Spotlight</span></div>
+      <div class="res">
+        <a href="miaolu3.github.io">PDF (coming soon)</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2510.11967">Scaling Long-Horizon LLM Agent via Context Folding</a></div>
+      <div class="authors">Weiwei Sun, <span class="me">Miao Lu</span>, Zhan Ling, Kang Liu, Xuesong Yao, Yiming Yang, Jiecao Chen</div>
+      <div class="venue">International Conference on Machine Learning (ICML) 2026</div>
+      <div class="res">
+        <a href="ArXiv_FoldGRPO.pdf">PDF</a>
+        <a href="https://github.com/sunnweiwei/FoldAgent">Code</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2510.06727">Beyond the Context Window: Scaling Agentic RL via End-to-end Optimized Context Compression</a></div>
+      <div class="authors"><span class="me">Miao Lu</span>, Weiwei Sun, Weihua Du, Zhan Ling, Xuesong Yao, Kang Liu, Jiecao Chen</div>
+      <div class="venue">Association for Computational Linguistics (ACL) 2026</div>
+      <div class="res">
+        <a href="ArXiv_SUPO.pdf">PDF</a>
+        <a href="Poster_SUPO.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://openreview.net/forum?id=is4nCVkSFA">Can Neural Networks Achieve Optimal Computational-Statistical Tradeoff? An Analysis on Single-Index Model</a></div>
+      <div class="authors">Siyu Chen*, Beining Wu*, <span class="me">Miao Lu</span>, Zhuoran Yang, Tianhao Wang</div>
+      <div class="venue">NeurIPS Workshop on Mathematics of Modern ML (M3L) 2024 <span class="tag">Oral</span></div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2025 <span class="tag">Oral</span></div>
+      <div class="res">
+        <a href="ICLR2025SingleIndex.pdf">PDF</a>
+        <a href="M3L_slides.pdf">Slides</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2405.16436">Provably Mitigating Overoptimization in RLHF: Your SFT Loss is Implicitly an Adversarial Regularizer</a></div>
+      <div class="authors">Zhihan Liu*, <span class="me">Miao Lu*</span>, Shenao Zhang, Boyi Liu, Hongyi Guo, Yingxiang Yang, Jose Blanchet, Zhaoran Wang</div>
+      <div class="venue">ICML Workshop on Aligning RL Experimentalists and Theorists (ARLET) 2024</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2024</div>
+      <div class="res">
+        <a href="ArXiv_RPO.pdf">PDF</a>
+        <a href="https://github.com/YSLIU627/Regularized-Preference-Optimization">Code</a>
+        <a href="Poster_RPO.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2310.17074">Benign Oscillation of Stochastic Gradient Descent with Large Learning Rates</a></div>
+      <div class="authors"><span class="me">Miao Lu*</span>, Beining Wu*, Xiaodong Yang, Difan Zou</div>
+      <div class="venue">NeurIPS Workshop on Mathematics of Modern ML (M3L) 2023</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2024</div>
+      <div class="res">
+        <a href="ArXiv_Benign_Oscillation.pdf">PDF</a>
+        <a href="Benign_Oscillation_Poster.pdf">Poster</a>
+      </div>
+    </div>
+
+    <div class="pub">
+      <div class="title"><a href="https://arxiv.org/abs/2305.18258">Maximize to Explore: One Objective Function Fusing Estimation, Planning, and Exploration</a></div>
+      <div class="authors">Zhihan Liu*, <span class="me">Miao Lu*</span>, Wei Xiong*, Han Zhong, Hao Hu, Shenao Zhang, Sirui Zheng, Zhuoran Yang, Zhaoran Wang</div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2023 <span class="tag">Spotlight</span></div>
+      <div class="venue">Under review in Operations Research (OR)</div>
+      <div class="res">
+        <a href="ArXiv_MEX.pdf">PDF</a>
+        <a href="https://github.com/agentification/MEX">Code</a>
+        <a href="NeurIPS2023MEX_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+        <div class="pub">
+      <div class="title"><a href="https://openreview.net/forum?id=O1DEtITim__">Learning Pruning-Friendly Networks via Frank-Wolfe: One-Shot, Any-Sparsity, and No Retraining</a></div>
+      <div class="authors"><span class="me">Miao Lu*</span>, Xiaolong Luo*, Tianlong Chen, Wuyang Chen, Dong Liu, Zhangyang Wang</div>
+      <div class="venue">International Conference on Learning Representations (ICLR) 2022 <span class="tag">Spotlight</span></div>
+      <div class="res">
+        <a href="ICLR2022SFWPruning.pdf">PDF</a>
+        <a href="https://github.com/VITA-Group/SFW-Once-for-All-Pruning">Code</a>
+        <a href="ICLR2022SFWPruning_Slides.pdf">Slides</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===================== EXPERIENCES ===================== -->
+  <section id="experiences">
+    <p class="eyebrow">Background</p>
+    <h2 class="section-title">Experiences</h2>
+
+    <div class="exp-group">
+      <h3>Education</h3>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light emblem" src="logos/stanford_tree.svg" alt=""><img class="org-logo dark emblem" src="logos/stanford_tree_dark.svg" alt="">Stanford University</span><span class="date">Sep 2023 – present</span></div>
+        <ul>
+          <li>Ph.D. candidate in Operations Research, advised by Jose Blanchet</li>
+          <li>Department of Management Science &amp; Engineering</li>
+        </ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light emblem" src="logos/ustc.svg" alt=""><img class="org-logo dark emblem" src="logos/ustc_dark.svg" alt="">University of Science and Technology of China</span><span class="date">Sep 2018 – Jun 2022</span></div>
+        <ul>
+          <li>B.S. in Mathematics and Applied Mathematics (GPA: 4.06/4.30, Rank: 2/140+)</li>
+          <li>School of the Gifted Young · 41st Guo Moruo Scholarship</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-group">
+      <h3>Industrial Experience</h3>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/nvidia.svg" alt=""><img class="org-logo dark" src="logos/nvidia_dark.svg" alt="">NVIDIA Research</span><span class="date">Jan 2026 – present</span></div>
+        <ul><li>Research Scientist Intern</li></ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/bytedance.svg" alt=""><img class="org-logo dark" src="logos/bytedance_dark.svg" alt="">ByteDance Seed</span><span class="date">Jun 2025 – Dec 2025</span></div>
+        <ul><li>Research Scientist Intern</li></ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/ubiquant.svg" alt=""><img class="org-logo dark" src="logos/ubiquant_dark.svg" alt="">Ubiquant Investment</span><span class="date">Jun 2022 – Sep 2022</span></div>
+        <ul><li>Quantitative Research Intern</li></ul>
+      </div>
+    </div>
+
+    <div class="exp-group">
+      <h3>Research Visiting</h3>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo raster emblem" src="logos/ttic.png" alt="">Toyota Technological Institute at Chicago</span><span class="date">Jul 2024 – Sep 2024</span></div>
+        <ul><li>Student Visitor, hosted by Tianhao Wang and Zhiyuan Li</li></ul>
+      </div>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/hku.svg" alt=""><img class="org-logo dark" src="logos/hku_dark.svg" alt="">The University of Hong Kong</span><span class="date">Apr 2023 – Aug 2023</span></div>
+        <ul><li>Research Assistant, hosted by Difan Zou</li></ul>
+      </div>
+    </div>
+
+    <div class="exp-group">
+      <h3>Invited Talks</h3>
+      <ul class="simple-list">
+        <li><b>Scaling Long Horizon LLM Agent via Reinforcement Learning</b> — TikTok Research Seminar, Remote, 2025 &nbsp;<a href="FoldGRPO_Slides.pdf">Slides</a></li>
+        <li><b>Optimal Robust Assortment Learning from Observational Data</b> — INFORMS Annual Meeting, Atlanta, 2025 &nbsp;<a href="Robust_Assortment_Optimization_Slides.pdf">Slides</a></li>
+        <li><b>Optimal Computational-Statistical Tradeoff: Single-Index Model</b> — 2nd NeurIPS M3L Workshop, Vancouver, 2024 &nbsp;<a href="M3L_slides.pdf">Slides</a></li>
+        <li><b>Distributionally Robust RL with Interactive Data Collection</b> — INFORMS Annual Meeting, Seattle, 2024 &nbsp;<a href="NeurIPS2024IDCSlides.pdf">Slides</a></li>
+        <li><b>Double Pessimism for Distributionally Robust Offline RL</b> — CISS, Princeton, 2024 · INFORMS Annual Meeting, Phoenix, 2023 &nbsp;<a href="NeurIPS2023DoublePessimism_Slides.pdf">Slides</a></li>
+      </ul>
+    </div>
+
+    <div class="exp-group">
+      <h3>Awards &amp; Honors</h3>
+      <ul class="simple-list">
+        <li>Xinhe Scholarship — outstanding undergraduate researcher, USTC (Mar 2023)</li>
+        <li>41st <b>Guo Moruo Scholarship</b> — highest scholarship from USTC (Sep 2021)</li>
+        <li>Yuanqing Yang Scholarship — top scholarship, School of Mathematical Sciences, USTC (Jan 2022)</li>
+        <li>S.-T. Yau College Student Mathematics Contests, winning prize (Prob. &amp; Stat. track) (Jun 2020)</li>
+        <li><b>National Scholarship</b> — highest scholarship from the Ministry of Education of China (2019 &amp; 2020)</li>
+      </ul>
+    </div>
+
+    <div class="exp-group">
+      <h3>Professional Service</h3>
+      <div class="exp-item">
+        <div class="svc-label">Journal Reviewer</div>
+        <p class="svc-list">Annals of Applied Probability (AOAP) · Operations Research (OR) · Management Science (MS) · Mathematics of Operations Research (MOR) · Transactions on Machine Learning Research (TMLR)</p>
+      </div>
+      <div class="exp-item">
+        <div class="svc-label">Conference Reviewer</div>
+        <p class="svc-list">NeurIPS (2023–2026) · ICLR (2024–2026) · ICML (2024–2026) · AISTATS (2025) · AAAI (2025) · ICML Workshops (ARLET, EXAIT, MOSS) · NeurIPS M3L</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Miao Lu</span>
+    <span>Stanford University · <a href="mailto:miaolu@stanford.edu">miaolu [at] stanford [dot] edu</a></span>
+  </div>
+</footer>
+
 </body>
 </html>
