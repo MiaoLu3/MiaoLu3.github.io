@@ -266,18 +266,13 @@
   .pub .venue + .venue { margin-top: 2px; }
   .tag {
     font-style: normal;
-    display: inline-block;
-    font-size: .68rem;
-    font-weight: 600;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-    color: var(--clay-deep);
-    background: var(--clay-soft);
-    padding: 2px 8px;
-    border-radius: 999px;
-    margin-left: 5px;
-    vertical-align: 1px;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: #a8542c;
+    margin-left: 3px;
   }
+  :root[data-theme="dark"] .tag { color: var(--clay); }
   .pub .res { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 8px; }
   .pub .res a {
     font-size: .78rem;
@@ -307,6 +302,7 @@
   .exp-head .org { font-weight: 600; color: var(--ink); display: inline-flex; align-items: center; gap: 10px; }
   .org-logo { height: 19px; width: auto; display: block; flex: none; }
   .org-logo.emblem { height: 24px; }
+  .org-logo.slim { height: 15px; }
   /* dark theme swaps to pre-recolored vector variants (no rasterizing filter) */
   .org-logo.dark { display: none; }
   :root[data-theme="dark"] .org-logo.light { display: none; }
@@ -316,6 +312,7 @@
   .exp-head .date { color: var(--ink-faint); font-size: .86rem; white-space: nowrap; }
   .exp-item ul { margin: 6px 0 0; padding-left: 18px; }
   .exp-item li { color: var(--ink-soft); font-size: .93rem; }
+  .exp-item li .loc { float: right; color: var(--ink-faint); font-size: .86rem; white-space: nowrap; margin-left: 16px; }
 
   .simple-list { list-style: none; padding: 0; margin: 0; }
   .simple-list li {
@@ -429,7 +426,7 @@
           <a href="https://joseblanchet.com">Prof. Jose Blanchet</a>.
           I received my B.S. in Mathematics from the
           <a href="http://en.ustc.edu.cn">University of Science and Technology of China</a>.
-          I interned at NVIDIA Research, ByteDance Seed, and Ubiquant Investment.
+          I interned at NVIDIA Research, ByteDance Seed, and Citadel Securities.
         </p>
       </div>
       <div class="hero-photo-wrap">
@@ -462,12 +459,14 @@
       <div class="title"><a href="https://arxiv.org/abs/2606.09052">INFUSER: Influence-Guided Self-Evolution Improves Reasoning</a></div>
       <div class="authors">Siyu Chen, <span class="me">Miao Lu</span>, Beining Wu, Heejune Sheen, Fengzhuo Zhang, Shuangning Li, Zhiyuan Li, Jose Blanchet, Tianhao Wang, Zhuoran Yang</div>
       <div class="venue">COLM Workshop on Scientific Understanding of Foundation Models (SciFM) 2026 </div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2026</div>
     </div>
 
     <div class="pub">
       <div class="title">Towards Understanding Momentum Acceleration in River-Valley Loss Landscape</div>
       <div class="authors"><span class="me">Miao Lu</span>, Zeyu Bian, Kaiyue Wen, Beining Wu, Siyu Chen, Tianhao Wang, Zhiyuan Li</div>
       <div class="venue">ICML Workshop on High-dimensional Learning Dynamics (HiLD) 2026 <span class="tag">Spotlight</span></div>
+      <div class="venue">Neural Information Processing Systems (NeurIPS) 2026</div>
     </div>
 
     <div class="pub">
@@ -520,22 +519,22 @@
 
   <!-- ===================== EXPERIENCES ===================== -->
   <section id="experiences">
-    <p class="eyebrow">Background</p>
     <h2 class="section-title">Experiences</h2>
 
     <div class="exp-group">
       <h3>Education</h3>
       <div class="exp-item">
-        <div class="exp-head"><span class="org"><img class="org-logo light emblem" src="logos/stanford_tree.svg" alt=""><img class="org-logo dark emblem" src="logos/stanford_tree_dark.svg" alt="">Stanford University</span><span class="date">Sep 2023 – present</span></div>
+        <div class="exp-head"><span class="org"><img class="org-logo light emblem" src="logos/stanford_tree.svg" alt=""><img class="org-logo dark emblem" src="logos/stanford_tree_dark.svg" alt="">Stanford University</span><span class="date">Sep 2023 – Dec 2026 (expected)</span></div>
         <ul>
-          <li>Ph.D. candidate in Operations Research, advised by Jose Blanchet</li>
+          <li>Ph.D. candidate in Operations Research, advised by Jose Blanchet <span class="loc">Stanford, CA</span></li>
           <li>Department of Management Science &amp; Engineering</li>
+          <li>Thesis: "Efficient and Robust Reinforcement Learning: from Theory to Self-evolving Generative AI"</li>
         </ul>
       </div>
       <div class="exp-item">
         <div class="exp-head"><span class="org"><img class="org-logo light emblem" src="logos/ustc.svg" alt=""><img class="org-logo dark emblem" src="logos/ustc_dark.svg" alt="">University of Science and Technology of China</span><span class="date">Sep 2018 – Jun 2022</span></div>
         <ul>
-          <li>B.S. in Mathematics and Applied Mathematics (GPA: 4.06/4.30, Rank: 2/140+)</li>
+          <li>B.S. in Mathematics and Applied Mathematics (GPA: 4.06/4.30, Rank: 2/140+) <span class="loc">Hefei, China</span></li>
           <li>School of the Gifted Young · 41st Guo Moruo Scholarship</li>
         </ul>
       </div>
@@ -544,16 +543,32 @@
     <div class="exp-group">
       <h3>Industrial Experience</h3>
       <div class="exp-item">
-        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/nvidia.svg" alt=""><img class="org-logo dark" src="logos/nvidia_dark.svg" alt="">NVIDIA Research</span><span class="date">Jan 2026 – present</span></div>
-        <ul><li>Research Scientist Intern</li></ul>
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/nvidia.svg" alt=""><img class="org-logo dark" src="logos/nvidia_dark.svg" alt="">NVIDIA Research</span><span class="date">Jan 2026 – Jul 2026</span></div>
+        <ul>
+          <li>Research Scientist Intern <span class="loc">Santa Clara, CA</span></li>
+          <li>Long-context training data synthesis and continued pre-training</li>
+        </ul>
+        </div>
+      <div class="exp-item">
+        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/bytedance.svg" alt=""><img class="org-logo dark" src="logos/bytedance_dark.svg" alt="">ByteDance Seed</span><span class="date">Jun 2025 – Jan 2026</span></div>
+        <ul>
+          <li>Research Scientist Intern <span class="loc">San Jose, CA</span></li>
+          <li>Long-horizon LLM agent RL post-training, context-managing agents</li>
+        </ul>
       </div>
       <div class="exp-item">
-        <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/bytedance.svg" alt=""><img class="org-logo dark" src="logos/bytedance_dark.svg" alt="">ByteDance Seed</span><span class="date">Jun 2025 – Dec 2025</span></div>
-        <ul><li>Research Scientist Intern</li></ul>
+        <div class="exp-head"><span class="org"><img class="org-logo light slim" src="logos/citadel_securities.png" alt=""><img class="org-logo dark slim" src="logos/citadel_securities_dark.png" alt="">Citadel Securities</span><span class="date">Jul 2026 – Sep 2026</span></div>
+        <ul>
+          <li>Quantitative Research Intern <span class="loc">Miami, FL</span></li>
+          <li>Systematic Equities, AI for alpha research</li>
+        </ul>
       </div>
       <div class="exp-item">
         <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/ubiquant.svg" alt=""><img class="org-logo dark" src="logos/ubiquant_dark.svg" alt="">Ubiquant Investment</span><span class="date">Jun 2022 – Sep 2022</span></div>
-        <ul><li>Quantitative Research Intern</li></ul>
+        <ul>
+          <li>Quantitative Research Intern <span class="loc">Shanghai, China</span></li>
+          <li> UbiQuant AI Lab, deep learning and reinforcement learning</li>
+        </ul>
       </div>
     </div>
 
@@ -561,11 +576,11 @@
       <h3>Research Visiting</h3>
       <div class="exp-item">
         <div class="exp-head"><span class="org"><img class="org-logo raster emblem" src="logos/ttic.png" alt="">Toyota Technological Institute at Chicago</span><span class="date">Jul 2024 – Sep 2024</span></div>
-        <ul><li>Student Visitor, hosted by Tianhao Wang and Zhiyuan Li</li></ul>
+        <ul><li>Student Visitor, hosted by Tianhao Wang and Zhiyuan Li <span class="loc">Chicago, IL</span></li></ul>
       </div>
       <div class="exp-item">
         <div class="exp-head"><span class="org"><img class="org-logo light" src="logos/hku.svg" alt=""><img class="org-logo dark" src="logos/hku_dark.svg" alt="">The University of Hong Kong</span><span class="date">Apr 2023 – Aug 2023</span></div>
-        <ul><li>Research Assistant, hosted by Difan Zou</li></ul>
+        <ul><li>Research Assistant, hosted by Difan Zou <span class="loc">Hong Kong, China</span></li></ul>
       </div>
     </div>
 
